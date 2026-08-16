@@ -1,0 +1,30 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "resolveJsonModule": true,
+    "noUncheckedIndexedAccess": false,
+    "baseUrl": ".",
+    "paths": {
+      "@lablens/core": [
+        "../../packages/lablens-core/src/index.ts"
+      ],
+      "@lablens/ocr/portable": [
+        "../../packages/lablens-ocr/src/portable.ts"
+      ],
+      "@lablens/data": [
+        "../../packages/lablens-data/src/index.ts"
+      ],
+      "@lablens/data/expo": [
+        "../../packages/lablens-data/src/expo.ts"
+      ],
+      "@lablens/data/node": [
+        "../../packages/lablens-data/src/node.ts"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}

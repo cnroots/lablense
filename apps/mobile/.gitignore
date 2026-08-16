@@ -1,0 +1,21 @@
+# Expo
+.expo/
+dist/
+web-build/
+
+# Native build outputs
+android/
+ios/
+*.apk
+*.aab
+*.ipa
+
+# Metro
+.metro-health-check*
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store

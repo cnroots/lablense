@@ -1,0 +1,1130 @@
+{
+  "file": "sample005.jpg",
+  "model": "v6-medium",
+  "angle": 0,
+  "width": 1844,
+  "confidence": 0.9898793602571516,
+  "text": "ALBIS\nLaborblatt vom 12.08.2026\nSeite 2 von 2\nNeubauer, Thomas, (9018), geb. 26.01.1978\n07.08.202606.08.2026\nKappa/Lambda-Quotient keine Einheit 1,8\nGesamteiweiß 60,00-80,00 g/l 70,20\nHaptoglobin 0,30-2,00 g/l 0,84\nImmunglobulin G (IgG) 7,00-16,00 g/l 12,33\nImmunglobulin A (IgA) 0,70-4,00 g/l 2,52\nImmunglobulin M (IgM) 0,40-2,30 g/l 1,06\nEiweißelektrophorese X\nAlbumin (Elektrophorese) 55,8-66,1 4\n% 62,2\nAlpha-1-Globulin 2,9-4,9 % 3,5\nAlpha-2-Globulin 7,1-11,8 % 7,0 (-)\nBeta-1-Globulin 4,7-7,2 % 5,9\nBeta-2-Globulin 3,2-6,5 % 6,4\nGamma-Globulin 11,1-18,8 % 15,0\nbeta-2-Mikroglobulin 0.80-2.40 mg/l 1,70\nI?slicher Transferrinrezeptor 1,71-4,13 mg/l 2,38\nFreie Kappa-Ketten 3.3-19.4 mg/ 21,4(+)\nFreie Lambda-Ketten 5.7-26.3 mg/l 11,8\nQuick 70-130 % 111\nINR keine Einheit 0,95\naPTT 25,0-37,0 sec 36,5\nFibrinogen 200-393 mg/dl 339,0\nPlasminogen 80,0-133,0 % 87,0\nThrombinzeit 10,0-17,0 sec 14,1\nAntithrombin 83-128 % 105,0\nD-Dimer (FEU) < 500.0 ng/ml 214,0\nBefund validiert von: Dr. Rüdi..\nEisen 33,0-193,0 ug/dl 93,8\nTransferrin 200,0-360,0 mg/dl 256,0\nTransferrin-Sättigung % 16,0-45,0 % 26,0",
+  "lines": [
+    [
+      {
+        "text": "ALBIS",
+        "confidence": 0.9987790822982788,
+        "box": {
+          "x": 145,
+          "y": 866,
+          "width": 104,
+          "height": 49
+        }
+      }
+    ],
+    [
+      {
+        "text": "Laborblatt vom 12.08.2026",
+        "confidence": 0.9992833828926087,
+        "box": {
+          "x": 639,
+          "y": 897,
+          "width": 598,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Seite 2 von 2",
+        "confidence": 0.9999858782841609,
+        "box": {
+          "x": 1409,
+          "y": 930,
+          "width": 317,
+          "height": 49
+        }
+      }
+    ],
+    [
+      {
+        "text": "Neubauer, Thomas, (9018), geb. 26.01.1978",
+        "confidence": 0.9874849203156262,
+        "box": {
+          "x": 477,
+          "y": 967,
+          "width": 987,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "07.08.202606.08.2026",
+        "confidence": 0.9999965846538543,
+        "box": {
+          "x": 1198,
+          "y": 1051,
+          "width": 410,
+          "height": 49
+        }
+      }
+    ],
+    [
+      {
+        "text": "Kappa/Lambda-Quotient",
+        "confidence": 0.9998850992747715,
+        "box": {
+          "x": 150,
+          "y": 1104,
+          "width": 449,
+          "height": 57
+        }
+      },
+      {
+        "text": "keine Einheit",
+        "confidence": 0.9998792776694665,
+        "box": {
+          "x": 938,
+          "y": 1102,
+          "width": 242,
+          "height": 49
+        }
+      },
+      {
+        "text": "1,8",
+        "confidence": 0.9984337290128072,
+        "box": {
+          "x": 1270,
+          "y": 1094,
+          "width": 74,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Gesamteiweiß",
+        "confidence": 0.9998684277137121,
+        "box": {
+          "x": 152,
+          "y": 1149,
+          "width": 262,
+          "height": 55
+        }
+      },
+      {
+        "text": "60,00-80,00 g/l",
+        "confidence": 0.995605742931366,
+        "box": {
+          "x": 717,
+          "y": 1141,
+          "width": 276,
+          "height": 55
+        }
+      },
+      {
+        "text": "70,20",
+        "confidence": 0.9989712953567504,
+        "box": {
+          "x": 1247,
+          "y": 1135,
+          "width": 115,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Haptoglobin",
+        "confidence": 0.9999815008857034,
+        "box": {
+          "x": 150,
+          "y": 1194,
+          "width": 221,
+          "height": 55
+        }
+      },
+      {
+        "text": "0,30-2,00 g/l",
+        "confidence": 0.9764921069145203,
+        "box": {
+          "x": 715,
+          "y": 1186,
+          "width": 285,
+          "height": 57
+        }
+      },
+      {
+        "text": "0,84",
+        "confidence": 0.9939718395471573,
+        "box": {
+          "x": 1262,
+          "y": 1180,
+          "width": 94,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Immunglobulin G (IgG)",
+        "confidence": 0.9929551226752145,
+        "box": {
+          "x": 150,
+          "y": 1235,
+          "width": 412,
+          "height": 55
+        }
+      },
+      {
+        "text": "7,00-16,00 g/l",
+        "confidence": 0.9637982675007412,
+        "box": {
+          "x": 715,
+          "y": 1231,
+          "width": 285,
+          "height": 57
+        }
+      },
+      {
+        "text": "12,33",
+        "confidence": 0.9998569011688232,
+        "box": {
+          "x": 1257,
+          "y": 1225,
+          "width": 104,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Immunglobulin A (IgA)",
+        "confidence": 0.996320576894851,
+        "box": {
+          "x": 147,
+          "y": 1280,
+          "width": 406,
+          "height": 55
+        }
+      },
+      {
+        "text": "0,70-4,00 g/l",
+        "confidence": 0.9698293346625108,
+        "box": {
+          "x": 715,
+          "y": 1274,
+          "width": 287,
+          "height": 59
+        }
+      },
+      {
+        "text": "2,52",
+        "confidence": 0.9977250248193741,
+        "box": {
+          "x": 1264,
+          "y": 1270,
+          "width": 92,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Immunglobulin M (IgM)",
+        "confidence": 0.9975658030737014,
+        "box": {
+          "x": 147,
+          "y": 1327,
+          "width": 418,
+          "height": 49
+        }
+      },
+      {
+        "text": "0,40-2,30 g/l",
+        "confidence": 0.953226754298577,
+        "box": {
+          "x": 717,
+          "y": 1319,
+          "width": 285,
+          "height": 59
+        }
+      },
+      {
+        "text": "1,06",
+        "confidence": 0.9979069828987122,
+        "box": {
+          "x": 1266,
+          "y": 1317,
+          "width": 90,
+          "height": 49
+        }
+      }
+    ],
+    [
+      {
+        "text": "Eiweißelektrophorese",
+        "confidence": 0.9978104144334793,
+        "box": {
+          "x": 145,
+          "y": 1372,
+          "width": 397,
+          "height": 47
+        }
+      },
+      {
+        "text": "X",
+        "confidence": 0.9892488718032837,
+        "box": {
+          "x": 1284,
+          "y": 1358,
+          "width": 57,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Albumin (Elektrophorese)",
+        "confidence": 0.9499688446521759,
+        "box": {
+          "x": 145,
+          "y": 1413,
+          "width": 463,
+          "height": 49
+        }
+      },
+      {
+        "text": "55,8-66,1",
+        "confidence": 0.999182489183214,
+        "box": {
+          "x": 719,
+          "y": 1409,
+          "width": 180,
+          "height": 49
+        }
+      },
+      {
+        "text": "4",
+        "confidence": 0.9967707395553589,
+        "box": {
+          "x": 922,
+          "y": 1419,
+          "width": 27,
+          "height": 20
+        }
+      }
+    ],
+    [
+      {
+        "text": "%",
+        "confidence": 0.9999052286148071,
+        "box": {
+          "x": 932,
+          "y": 1399,
+          "width": 63,
+          "height": 66
+        }
+      },
+      {
+        "text": "62,2",
+        "confidence": 0.9994570165872574,
+        "box": {
+          "x": 1264,
+          "y": 1405,
+          "width": 92,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Alpha-1-Globulin",
+        "confidence": 0.9999512732028961,
+        "box": {
+          "x": 145,
+          "y": 1458,
+          "width": 311,
+          "height": 49
+        }
+      },
+      {
+        "text": "2,9-4,9",
+        "confidence": 0.9951296704156058,
+        "box": {
+          "x": 717,
+          "y": 1454,
+          "width": 139,
+          "height": 49
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9996476173400879,
+        "box": {
+          "x": 932,
+          "y": 1444,
+          "width": 63,
+          "height": 66
+        }
+      },
+      {
+        "text": "3,5",
+        "confidence": 0.9738771716753641,
+        "box": {
+          "x": 1272,
+          "y": 1444,
+          "width": 80,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Alpha-2-Globulin",
+        "confidence": 0.9999570325016975,
+        "box": {
+          "x": 145,
+          "y": 1503,
+          "width": 311,
+          "height": 49
+        }
+      },
+      {
+        "text": "7,1-11,8",
+        "confidence": 0.999178946018219,
+        "box": {
+          "x": 717,
+          "y": 1495,
+          "width": 160,
+          "height": 55
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9938342571258545,
+        "box": {
+          "x": 934,
+          "y": 1489,
+          "width": 61,
+          "height": 66
+        }
+      },
+      {
+        "text": "7,0 (-)",
+        "confidence": 0.9251937781061444,
+        "box": {
+          "x": 1249,
+          "y": 1493,
+          "width": 123,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Beta-1-Globulin",
+        "confidence": 0.9999664584795634,
+        "box": {
+          "x": 143,
+          "y": 1548,
+          "width": 291,
+          "height": 47
+        }
+      },
+      {
+        "text": "4,7-7,2",
+        "confidence": 0.9980733564921788,
+        "box": {
+          "x": 717,
+          "y": 1544,
+          "width": 141,
+          "height": 49
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9841043949127197,
+        "box": {
+          "x": 934,
+          "y": 1534,
+          "width": 61,
+          "height": 66
+        }
+      },
+      {
+        "text": "5,9",
+        "confidence": 0.9848551750183105,
+        "box": {
+          "x": 1276,
+          "y": 1538,
+          "width": 76,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Beta-2-Globulin",
+        "confidence": 0.9999900817871094,
+        "box": {
+          "x": 141,
+          "y": 1593,
+          "width": 295,
+          "height": 49
+        }
+      },
+      {
+        "text": "3,2-6,5",
+        "confidence": 0.997265202658517,
+        "box": {
+          "x": 717,
+          "y": 1589,
+          "width": 141,
+          "height": 49
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.890926718711853,
+        "box": {
+          "x": 934,
+          "y": 1579,
+          "width": 61,
+          "height": 66
+        }
+      },
+      {
+        "text": "6,4",
+        "confidence": 0.9973000884056091,
+        "box": {
+          "x": 1276,
+          "y": 1583,
+          "width": 78,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Gamma-Globulin",
+        "confidence": 0.9999844048704419,
+        "box": {
+          "x": 139,
+          "y": 1638,
+          "width": 317,
+          "height": 49
+        }
+      },
+      {
+        "text": "11,1-18,8 %",
+        "confidence": 0.9956813075325706,
+        "box": {
+          "x": 717,
+          "y": 1628,
+          "width": 283,
+          "height": 59
+        }
+      },
+      {
+        "text": "15,0",
+        "confidence": 0.989997923374176,
+        "box": {
+          "x": 1272,
+          "y": 1626,
+          "width": 92,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "beta-2-Mikroglobulin",
+        "confidence": 0.9999930739402771,
+        "box": {
+          "x": 139,
+          "y": 1683,
+          "width": 379,
+          "height": 49
+        }
+      },
+      {
+        "text": "0.80-2.40",
+        "confidence": 0.9999966091579862,
+        "box": {
+          "x": 717,
+          "y": 1679,
+          "width": 188,
+          "height": 49
+        }
+      },
+      {
+        "text": "mg/l",
+        "confidence": 0.9464707523584366,
+        "box": {
+          "x": 932,
+          "y": 1677,
+          "width": 102,
+          "height": 57
+        }
+      },
+      {
+        "text": "1,70",
+        "confidence": 0.9984958469867706,
+        "box": {
+          "x": 1272,
+          "y": 1673,
+          "width": 90,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "I?slicher Transferrinrezeptor",
+        "confidence": 0.9845298508117939,
+        "box": {
+          "x": 139,
+          "y": 1729,
+          "width": 512,
+          "height": 49
+        }
+      },
+      {
+        "text": "1,71-4,13",
+        "confidence": 0.9996495644251505,
+        "box": {
+          "x": 715,
+          "y": 1724,
+          "width": 188,
+          "height": 49
+        }
+      },
+      {
+        "text": "mg/l",
+        "confidence": 0.9978341460227966,
+        "box": {
+          "x": 938,
+          "y": 1724,
+          "width": 96,
+          "height": 55
+        }
+      },
+      {
+        "text": "2,38",
+        "confidence": 0.9972662478685379,
+        "box": {
+          "x": 1270,
+          "y": 1716,
+          "width": 94,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Freie Kappa-Ketten",
+        "confidence": 0.99998449616962,
+        "box": {
+          "x": 139,
+          "y": 1776,
+          "width": 365,
+          "height": 49
+        }
+      },
+      {
+        "text": "3.3-19.4",
+        "confidence": 0.9999891817569733,
+        "box": {
+          "x": 717,
+          "y": 1772,
+          "width": 172,
+          "height": 49
+        }
+      },
+      {
+        "text": "mg/",
+        "confidence": 0.999987006187439,
+        "box": {
+          "x": 942,
+          "y": 1769,
+          "width": 94,
+          "height": 57
+        }
+      },
+      {
+        "text": "21,4(+)",
+        "confidence": 0.9719915645463126,
+        "box": {
+          "x": 1239,
+          "y": 1763,
+          "width": 158,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Freie Lambda-Ketten",
+        "confidence": 0.9999758444334331,
+        "box": {
+          "x": 139,
+          "y": 1821,
+          "width": 395,
+          "height": 47
+        }
+      },
+      {
+        "text": "5.7-26.3",
+        "confidence": 0.9999687299132347,
+        "box": {
+          "x": 717,
+          "y": 1815,
+          "width": 164,
+          "height": 49
+        }
+      },
+      {
+        "text": "mg/l",
+        "confidence": 0.8893313258886337,
+        "box": {
+          "x": 942,
+          "y": 1812,
+          "width": 94,
+          "height": 57
+        }
+      },
+      {
+        "text": "11,8",
+        "confidence": 0.9877778738737106,
+        "box": {
+          "x": 1274,
+          "y": 1808,
+          "width": 90,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Quick",
+        "confidence": 0.9999946832656861,
+        "box": {
+          "x": 137,
+          "y": 1862,
+          "width": 119,
+          "height": 55
+        }
+      },
+      {
+        "text": "70-130",
+        "confidence": 0.9999969601631165,
+        "box": {
+          "x": 717,
+          "y": 1858,
+          "width": 141,
+          "height": 55
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9997884631156921,
+        "box": {
+          "x": 938,
+          "y": 1851,
+          "width": 66,
+          "height": 66
+        }
+      },
+      {
+        "text": "111",
+        "confidence": 0.9706834157307943,
+        "box": {
+          "x": 1278,
+          "y": 1853,
+          "width": 82,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "INR",
+        "confidence": 0.9998299876848856,
+        "box": {
+          "x": 137,
+          "y": 1905,
+          "width": 86,
+          "height": 59
+        }
+      },
+      {
+        "text": "keine Einheit",
+        "confidence": 0.9999713347508357,
+        "box": {
+          "x": 944,
+          "y": 1905,
+          "width": 248,
+          "height": 49
+        }
+      },
+      {
+        "text": "0,95",
+        "confidence": 0.9918621480464935,
+        "box": {
+          "x": 1270,
+          "y": 1901,
+          "width": 96,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "aPTT",
+        "confidence": 0.9999914467334747,
+        "box": {
+          "x": 139,
+          "y": 1954,
+          "width": 113,
+          "height": 55
+        }
+      },
+      {
+        "text": "25,0-37,0 sec",
+        "confidence": 0.9980640778174767,
+        "box": {
+          "x": 719,
+          "y": 1950,
+          "width": 307,
+          "height": 55
+        }
+      },
+      {
+        "text": "36,5",
+        "confidence": 0.996848464012146,
+        "box": {
+          "x": 1274,
+          "y": 1948,
+          "width": 92,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Fibrinogen",
+        "confidence": 0.9999930143356324,
+        "box": {
+          "x": 139,
+          "y": 2005,
+          "width": 207,
+          "height": 49
+        }
+      },
+      {
+        "text": "200-393",
+        "confidence": 0.9999966280800956,
+        "box": {
+          "x": 719,
+          "y": 1999,
+          "width": 166,
+          "height": 49
+        }
+      },
+      {
+        "text": "mg/dl",
+        "confidence": 0.9994225859642029,
+        "box": {
+          "x": 942,
+          "y": 1995,
+          "width": 119,
+          "height": 57
+        }
+      },
+      {
+        "text": "339,0",
+        "confidence": 0.9931724667549133,
+        "box": {
+          "x": 1264,
+          "y": 1993,
+          "width": 111,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Plasminogen",
+        "confidence": 0.9999943971633911,
+        "box": {
+          "x": 141,
+          "y": 2052,
+          "width": 248,
+          "height": 47
+        }
+      },
+      {
+        "text": "80,0-133,0 %",
+        "confidence": 0.9695981691281,
+        "box": {
+          "x": 719,
+          "y": 2040,
+          "width": 279,
+          "height": 57
+        }
+      },
+      {
+        "text": "87,0",
+        "confidence": 0.9978473782539368,
+        "box": {
+          "x": 1272,
+          "y": 2040,
+          "width": 94,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Thrombinzeit",
+        "confidence": 0.9999942978223165,
+        "box": {
+          "x": 141,
+          "y": 2095,
+          "width": 248,
+          "height": 47
+        }
+      },
+      {
+        "text": "10,0-17,0",
+        "confidence": 0.9973218772146437,
+        "box": {
+          "x": 723,
+          "y": 2089,
+          "width": 180,
+          "height": 49
+        }
+      },
+      {
+        "text": "sec",
+        "confidence": 0.9999953905741373,
+        "box": {
+          "x": 924,
+          "y": 2091,
+          "width": 100,
+          "height": 49
+        }
+      },
+      {
+        "text": "14,1",
+        "confidence": 0.9929722249507904,
+        "box": {
+          "x": 1272,
+          "y": 2085,
+          "width": 96,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Antithrombin",
+        "confidence": 0.9999916354815165,
+        "box": {
+          "x": 137,
+          "y": 2140,
+          "width": 246,
+          "height": 49
+        }
+      },
+      {
+        "text": "83-128",
+        "confidence": 0.9999985297520956,
+        "box": {
+          "x": 717,
+          "y": 2134,
+          "width": 143,
+          "height": 49
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9984450936317444,
+        "box": {
+          "x": 938,
+          "y": 2124,
+          "width": 66,
+          "height": 68
+        }
+      },
+      {
+        "text": "105,0",
+        "confidence": 0.9996761918067932,
+        "box": {
+          "x": 1266,
+          "y": 2128,
+          "width": 111,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "D-Dimer (FEU)",
+        "confidence": 0.9831867814064026,
+        "box": {
+          "x": 139,
+          "y": 2181,
+          "width": 285,
+          "height": 55
+        }
+      },
+      {
+        "text": "< 500.0",
+        "confidence": 0.9933299251965114,
+        "box": {
+          "x": 719,
+          "y": 2177,
+          "width": 154,
+          "height": 55
+        }
+      },
+      {
+        "text": "ng/ml",
+        "confidence": 0.9997692465782165,
+        "box": {
+          "x": 942,
+          "y": 2177,
+          "width": 119,
+          "height": 57
+        }
+      },
+      {
+        "text": "214,0",
+        "confidence": 0.9983971118927002,
+        "box": {
+          "x": 1264,
+          "y": 2175,
+          "width": 115,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Befund validiert von:",
+        "confidence": 0.9999815282367525,
+        "box": {
+          "x": 137,
+          "y": 2226,
+          "width": 381,
+          "height": 55
+        }
+      },
+      {
+        "text": "Dr. Rüdi..",
+        "confidence": 0.9850239157676697,
+        "box": {
+          "x": 1231,
+          "y": 2222,
+          "width": 174,
+          "height": 49
+        }
+      }
+    ],
+    [
+      {
+        "text": "Eisen",
+        "confidence": 0.999989652633667,
+        "box": {
+          "x": 131,
+          "y": 2273,
+          "width": 119,
+          "height": 55
+        }
+      },
+      {
+        "text": "33,0-193,0 ug/dl",
+        "confidence": 0.9163815081119537,
+        "box": {
+          "x": 721,
+          "y": 2271,
+          "width": 326,
+          "height": 49
+        }
+      },
+      {
+        "text": "93,8",
+        "confidence": 0.9983388036489487,
+        "box": {
+          "x": 1276,
+          "y": 2265,
+          "width": 94,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Transferrin",
+        "confidence": 0.9999936927448619,
+        "box": {
+          "x": 133,
+          "y": 2322,
+          "width": 209,
+          "height": 49
+        }
+      },
+      {
+        "text": "200,0-360,0 mg/dl",
+        "confidence": 0.9930241283248452,
+        "box": {
+          "x": 721,
+          "y": 2318,
+          "width": 338,
+          "height": 49
+        }
+      },
+      {
+        "text": "256,0",
+        "confidence": 0.9951108813285827,
+        "box": {
+          "x": 1266,
+          "y": 2312,
+          "width": 115,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Transferrin-Sättigung %",
+        "confidence": 0.9999012117800505,
+        "box": {
+          "x": 131,
+          "y": 2365,
+          "width": 444,
+          "height": 57
+        }
+      },
+      {
+        "text": "16,0-45,0 %",
+        "confidence": 0.9413725191896612,
+        "box": {
+          "x": 723,
+          "y": 2361,
+          "width": 276,
+          "height": 55
+        }
+      },
+      {
+        "text": "26,0",
+        "confidence": 0.9797768443822861,
+        "box": {
+          "x": 1274,
+          "y": 2357,
+          "width": 98,
+          "height": 59
+        }
+      }
+    ]
+  ]
+}

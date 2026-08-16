@@ -1,0 +1,35 @@
+{
+  "name": "@lablens/ocr",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./portable": {
+      "types": "./src/portable.ts",
+      "default": "./src/portable.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@lablens/core": "0.1.0"
+  },
+  "optionalDependencies": {
+    "onnxruntime-node": "^1.23.2",
+    "ppu-ocv": "^4.0.0",
+    "ppu-paddle-ocr": "^6.4.0"
+  },
+  "devDependencies": {
+    "@lablens/data": "0.1.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.0.0"
+  }
+}

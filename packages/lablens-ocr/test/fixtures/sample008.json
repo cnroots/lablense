@@ -1,0 +1,2094 @@
+{
+  "file": "sample008.jpg",
+  "model": "v6-medium",
+  "angle": 0,
+  "width": 1844,
+  "confidence": 0.9771240654567215,
+  "text": "ALBIS Laborblatt vom 12.08.2026\nNeubauer, Thomas, (9018), geb. 26.01.1978 Seite 1 von 2\n07.08.202606.08.2026\nNatrium 136-145 mmol/l 141\nKalium 3,50-5,10 mmol/ 4,04\nCalcium 2,15-2,50 mmol/l 2,42\nGlucose (Serum/Plasma) 60-100 mg/dl 76\nGOT (=ASAT) <50 UΛ 25\nGPT (=ALAT) < 50 U/I 17\nGamma-GT < 59.0 U/I 28,0\nBilirubin gesamt <1.20 mg/dl 0,60\nBilirubin direkt <0.30 mg/dl 0,21\nCK < 190 U/I 198(+)\nLDH 135-225 U/A 202\nAlk. Phosphatase 40-130 U/A 110\nLipase 13-60 UA 27\nBilirubin indirekt <0.75 mg/dl 0,39\nNT-pro-BNP <738 pg/ml 74\nHarnsäure 3,4-7,0 mg/dl 4,8\nHarnstoff 16,6-48,5 mg/dl 28,2\nKreatinin enzymatisch 0,67-1,17 mg/dl 0,82\neGFR (CKD-EPI) >90 ml/min/1.73m² 105\nLeukozyten 3,7-9,9 G/ 5,5\nErythrozyten 4,4-5,9 TA 4,9\nHämoglobin 13,5-17,8 g/dl 14,9\nHämatokrit 40-53 % 44\nMCV 80-96 fl 90\nMCHC 33-36 g/dl 34\nMCH 28-33 pg 31\nThrombozyten 146-328 G/ 244\nNeutroph. Granulozyten 40-75 % 67\nLymphozyten 13-45 % 22\nMonozyten 4,0-12,0 % 7,4\nEosin. Granulozyten <5.0 % 3,3\nBasoph. Granulozyten < 1.5 % 0,9\nBasoph. Granulozyten absolut < 0.08 G/ 0,05\nEosin. Granulozyten absolut <0.44 G/I 0,18\nNeutroph.Granulozyten absolut 1,80-6,20 G/ 3,68\nLymphozyten absolut 1,10-3,20 G/I 1,20\nMonozyten absolut 0,25-0,85 G/I 0,41\nRDW 11,6-14,4 % 13,5\nMPV (mittleres Thromboz.-Vol.) 9-13 fl 11\nTSH basal 0,27-4,20 mU/I 0,86\nfT3 (freies T3) 3,10-6,80 pmol/l 3,86\nfT4 (freies T4) 12,0-22,0 pmol/l 14,8\nFerritin 13-400 ng/ml 96\nVitamin B12 210-945 pg/ml 487\nTSH 0,27-4,20 μU/ml 0,88\nFolsäure 4.6-18.7 ng/ml 6,8\nCEA < 4.7 ng/ml 2,4\nS-100 < 0.100 /1 0,08\nCRP (C-reaktives Protein) bis 5.00 mg/l 2,5",
+  "lines": [
+    [
+      {
+        "text": "ALBIS",
+        "confidence": 0.9882746934890747,
+        "box": {
+          "x": 92,
+          "y": 780,
+          "width": 109,
+          "height": 55
+        }
+      },
+      {
+        "text": "Laborblatt vom 12.08.2026",
+        "confidence": 0.9999231934547425,
+        "box": {
+          "x": 618,
+          "y": 797,
+          "width": 668,
+          "height": 78
+        }
+      }
+    ],
+    [
+      {
+        "text": "Neubauer, Thomas, (9018), geb. 26.01.1978",
+        "confidence": 0.9926122703203341,
+        "box": {
+          "x": 446,
+          "y": 862,
+          "width": 1094,
+          "height": 96
+        }
+      },
+      {
+        "text": "Seite 1 von 2",
+        "confidence": 0.9934010872474084,
+        "box": {
+          "x": 1473,
+          "y": 825,
+          "width": 356,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "07.08.202606.08.2026",
+        "confidence": 0.9999976098537445,
+        "box": {
+          "x": 1237,
+          "y": 954,
+          "width": 459,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "Natrium",
+        "confidence": 0.9999964577811105,
+        "box": {
+          "x": 90,
+          "y": 1044,
+          "width": 164,
+          "height": 47
+        }
+      },
+      {
+        "text": "136-145",
+        "confidence": 0.9999930007117135,
+        "box": {
+          "x": 713,
+          "y": 1022,
+          "width": 174,
+          "height": 55
+        }
+      },
+      {
+        "text": "mmol/l",
+        "confidence": 0.8705391585826874,
+        "box": {
+          "x": 950,
+          "y": 1024,
+          "width": 147,
+          "height": 55
+        }
+      },
+      {
+        "text": "141",
+        "confidence": 0.9999978542327881,
+        "box": {
+          "x": 1536,
+          "y": 1006,
+          "width": 90,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Kalium",
+        "confidence": 0.9999947945276896,
+        "box": {
+          "x": 86,
+          "y": 1090,
+          "width": 152,
+          "height": 49
+        }
+      },
+      {
+        "text": "3,50-5,10",
+        "confidence": 0.9995528724458482,
+        "box": {
+          "x": 707,
+          "y": 1069,
+          "width": 207,
+          "height": 57
+        }
+      },
+      {
+        "text": "mmol/",
+        "confidence": 0.9838489532470703,
+        "box": {
+          "x": 928,
+          "y": 1069,
+          "width": 172,
+          "height": 57
+        }
+      },
+      {
+        "text": "4,04",
+        "confidence": 0.997745931148529,
+        "box": {
+          "x": 1532,
+          "y": 1053,
+          "width": 104,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Calcium",
+        "confidence": 0.9999891178948539,
+        "box": {
+          "x": 86,
+          "y": 1137,
+          "width": 172,
+          "height": 49
+        }
+      },
+      {
+        "text": "2,15-2,50",
+        "confidence": 0.9979439112875197,
+        "box": {
+          "x": 707,
+          "y": 1118,
+          "width": 207,
+          "height": 57
+        }
+      },
+      {
+        "text": "mmol/l",
+        "confidence": 0.9801573654015859,
+        "box": {
+          "x": 950,
+          "y": 1120,
+          "width": 145,
+          "height": 55
+        }
+      },
+      {
+        "text": "2,42",
+        "confidence": 0.9982164651155472,
+        "box": {
+          "x": 1532,
+          "y": 1102,
+          "width": 104,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Glucose (Serum/Plasma)",
+        "confidence": 0.9992919889363375,
+        "box": {
+          "x": 86,
+          "y": 1180,
+          "width": 500,
+          "height": 55
+        }
+      },
+      {
+        "text": "60-100",
+        "confidence": 0.9999945163726807,
+        "box": {
+          "x": 709,
+          "y": 1167,
+          "width": 154,
+          "height": 55
+        }
+      },
+      {
+        "text": "mg/dl",
+        "confidence": 0.9996738076210022,
+        "box": {
+          "x": 954,
+          "y": 1167,
+          "width": 129,
+          "height": 59
+        }
+      },
+      {
+        "text": "76",
+        "confidence": 0.9999977350234985,
+        "box": {
+          "x": 1550,
+          "y": 1149,
+          "width": 76,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "GOT (=ASAT)",
+        "confidence": 0.9640357277610085,
+        "box": {
+          "x": 86,
+          "y": 1227,
+          "width": 287,
+          "height": 55
+        }
+      },
+      {
+        "text": "<50",
+        "confidence": 0.9998419483502706,
+        "box": {
+          "x": 709,
+          "y": 1212,
+          "width": 109,
+          "height": 59
+        }
+      },
+      {
+        "text": "UΛ",
+        "confidence": 0.7070712000131607,
+        "box": {
+          "x": 950,
+          "y": 1210,
+          "width": 82,
+          "height": 59
+        }
+      },
+      {
+        "text": "25",
+        "confidence": 0.9999988079071045,
+        "box": {
+          "x": 1550,
+          "y": 1194,
+          "width": 78,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "GPT (=ALAT)",
+        "confidence": 0.966916328126734,
+        "box": {
+          "x": 84,
+          "y": 1274,
+          "width": 276,
+          "height": 57
+        }
+      },
+      {
+        "text": "< 50",
+        "confidence": 0.877818837761879,
+        "box": {
+          "x": 709,
+          "y": 1262,
+          "width": 109,
+          "height": 57
+        }
+      },
+      {
+        "text": "U/I",
+        "confidence": 0.9201151728630066,
+        "box": {
+          "x": 950,
+          "y": 1257,
+          "width": 80,
+          "height": 59
+        }
+      },
+      {
+        "text": "17",
+        "confidence": 0.9999838471412659,
+        "box": {
+          "x": 1554,
+          "y": 1237,
+          "width": 74,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "Gamma-GT",
+        "confidence": 0.9999788701534271,
+        "box": {
+          "x": 82,
+          "y": 1321,
+          "width": 250,
+          "height": 57
+        }
+      },
+      {
+        "text": "< 59.0",
+        "confidence": 0.9692728916803995,
+        "box": {
+          "x": 711,
+          "y": 1309,
+          "width": 141,
+          "height": 57
+        }
+      },
+      {
+        "text": "U/I",
+        "confidence": 0.76121386885643,
+        "box": {
+          "x": 950,
+          "y": 1307,
+          "width": 82,
+          "height": 59
+        }
+      },
+      {
+        "text": "28,0",
+        "confidence": 0.9730792790651321,
+        "box": {
+          "x": 1540,
+          "y": 1292,
+          "width": 106,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Bilirubin gesamt",
+        "confidence": 0.9999289587140083,
+        "box": {
+          "x": 82,
+          "y": 1370,
+          "width": 330,
+          "height": 57
+        }
+      },
+      {
+        "text": "<1.20",
+        "confidence": 0.9998106956481934,
+        "box": {
+          "x": 711,
+          "y": 1358,
+          "width": 143,
+          "height": 57
+        }
+      },
+      {
+        "text": "mg/dl",
+        "confidence": 0.9996268630027771,
+        "box": {
+          "x": 954,
+          "y": 1360,
+          "width": 129,
+          "height": 57
+        }
+      },
+      {
+        "text": "0,60",
+        "confidence": 0.9939683228731155,
+        "box": {
+          "x": 1540,
+          "y": 1341,
+          "width": 106,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Bilirubin direkt",
+        "confidence": 0.9995225705206394,
+        "box": {
+          "x": 82,
+          "y": 1417,
+          "width": 291,
+          "height": 55
+        }
+      },
+      {
+        "text": "<0.30",
+        "confidence": 0.9998454570770263,
+        "box": {
+          "x": 711,
+          "y": 1407,
+          "width": 139,
+          "height": 55
+        }
+      },
+      {
+        "text": "mg/dl",
+        "confidence": 0.9997227430343628,
+        "box": {
+          "x": 956,
+          "y": 1409,
+          "width": 129,
+          "height": 57
+        }
+      },
+      {
+        "text": "0,21",
+        "confidence": 0.9923640638589859,
+        "box": {
+          "x": 1542,
+          "y": 1391,
+          "width": 104,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "CK",
+        "confidence": 0.999976396560669,
+        "box": {
+          "x": 76,
+          "y": 1462,
+          "width": 86,
+          "height": 59
+        }
+      },
+      {
+        "text": "< 190",
+        "confidence": 0.9629495143890381,
+        "box": {
+          "x": 711,
+          "y": 1454,
+          "width": 129,
+          "height": 55
+        }
+      },
+      {
+        "text": "U/I",
+        "confidence": 0.7198849618434906,
+        "box": {
+          "x": 954,
+          "y": 1452,
+          "width": 82,
+          "height": 59
+        }
+      },
+      {
+        "text": "198(+)",
+        "confidence": 0.9987855553627014,
+        "box": {
+          "x": 1526,
+          "y": 1442,
+          "width": 156,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "LDH",
+        "confidence": 0.9998980164527893,
+        "box": {
+          "x": 76,
+          "y": 1516,
+          "width": 104,
+          "height": 55
+        }
+      },
+      {
+        "text": "135-225",
+        "confidence": 0.9999963385718209,
+        "box": {
+          "x": 715,
+          "y": 1503,
+          "width": 172,
+          "height": 55
+        }
+      },
+      {
+        "text": "U/A",
+        "confidence": 0.7036016682783762,
+        "box": {
+          "x": 954,
+          "y": 1501,
+          "width": 82,
+          "height": 59
+        }
+      },
+      {
+        "text": "202",
+        "confidence": 0.9999990463256836,
+        "box": {
+          "x": 1552,
+          "y": 1489,
+          "width": 94,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Alk. Phosphatase",
+        "confidence": 0.9984807185828686,
+        "box": {
+          "x": 78,
+          "y": 1565,
+          "width": 356,
+          "height": 55
+        }
+      },
+      {
+        "text": "40-130",
+        "confidence": 0.9999965826670328,
+        "box": {
+          "x": 713,
+          "y": 1554,
+          "width": 152,
+          "height": 55
+        }
+      },
+      {
+        "text": "U/A",
+        "confidence": 0.7899644573529562,
+        "box": {
+          "x": 954,
+          "y": 1550,
+          "width": 82,
+          "height": 59
+        }
+      },
+      {
+        "text": "110",
+        "confidence": 0.9999630848566691,
+        "box": {
+          "x": 1559,
+          "y": 1538,
+          "width": 86,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Lipase",
+        "confidence": 0.999991257985433,
+        "box": {
+          "x": 74,
+          "y": 1616,
+          "width": 150,
+          "height": 57
+        }
+      },
+      {
+        "text": "13-60",
+        "confidence": 0.9999973773956299,
+        "box": {
+          "x": 713,
+          "y": 1604,
+          "width": 129,
+          "height": 55
+        }
+      },
+      {
+        "text": "UA",
+        "confidence": 0.9331605732440948,
+        "box": {
+          "x": 954,
+          "y": 1595,
+          "width": 82,
+          "height": 66
+        }
+      },
+      {
+        "text": "27",
+        "confidence": 0.9999975562095642,
+        "box": {
+          "x": 1567,
+          "y": 1587,
+          "width": 76,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Bilirubin indirekt",
+        "confidence": 0.999955587916904,
+        "box": {
+          "x": 74,
+          "y": 1663,
+          "width": 336,
+          "height": 59
+        }
+      },
+      {
+        "text": "<0.75",
+        "confidence": 0.9999601364135742,
+        "box": {
+          "x": 713,
+          "y": 1653,
+          "width": 141,
+          "height": 57
+        }
+      },
+      {
+        "text": "mg/dl",
+        "confidence": 0.9985694050788879,
+        "box": {
+          "x": 961,
+          "y": 1649,
+          "width": 129,
+          "height": 66
+        }
+      },
+      {
+        "text": "0,39",
+        "confidence": 0.9960411936044693,
+        "box": {
+          "x": 1552,
+          "y": 1640,
+          "width": 104,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "NT-pro-BNP",
+        "confidence": 0.9999376952648162,
+        "box": {
+          "x": 74,
+          "y": 1712,
+          "width": 258,
+          "height": 57
+        }
+      },
+      {
+        "text": "<738",
+        "confidence": 0.9997853338718414,
+        "box": {
+          "x": 709,
+          "y": 1702,
+          "width": 137,
+          "height": 57
+        }
+      },
+      {
+        "text": "pg/ml",
+        "confidence": 0.999896514415741,
+        "box": {
+          "x": 963,
+          "y": 1702,
+          "width": 129,
+          "height": 59
+        }
+      },
+      {
+        "text": "74",
+        "confidence": 0.9999982714653015,
+        "box": {
+          "x": 1341,
+          "y": 1688,
+          "width": 78,
+          "height": 68
+        }
+      }
+    ],
+    [
+      {
+        "text": "Harnsäure",
+        "confidence": 0.9999380773968167,
+        "box": {
+          "x": 70,
+          "y": 1765,
+          "width": 227,
+          "height": 57
+        }
+      },
+      {
+        "text": "3,4-7,0",
+        "confidence": 0.9981746332986015,
+        "box": {
+          "x": 709,
+          "y": 1755,
+          "width": 160,
+          "height": 57
+        }
+      },
+      {
+        "text": "mg/dl",
+        "confidence": 0.9992262959480286,
+        "box": {
+          "x": 963,
+          "y": 1753,
+          "width": 129,
+          "height": 59
+        }
+      },
+      {
+        "text": "4,8",
+        "confidence": 0.9877248803774515,
+        "box": {
+          "x": 1567,
+          "y": 1741,
+          "width": 86,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Harnstoff",
+        "confidence": 0.9999820126427544,
+        "box": {
+          "x": 74,
+          "y": 1812,
+          "width": 201,
+          "height": 57
+        }
+      },
+      {
+        "text": "16,6-48,5",
+        "confidence": 0.9987972577412924,
+        "box": {
+          "x": 715,
+          "y": 1804,
+          "width": 207,
+          "height": 57
+        }
+      },
+      {
+        "text": "mg/dl",
+        "confidence": 0.99884432554245,
+        "box": {
+          "x": 961,
+          "y": 1800,
+          "width": 131,
+          "height": 66
+        }
+      },
+      {
+        "text": "28,2",
+        "confidence": 0.9758432358503342,
+        "box": {
+          "x": 1556,
+          "y": 1792,
+          "width": 104,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Kreatinin enzymatisch",
+        "confidence": 0.9999929666519165,
+        "box": {
+          "x": 76,
+          "y": 1862,
+          "width": 451,
+          "height": 59
+        }
+      },
+      {
+        "text": "0,67-1,17",
+        "confidence": 0.9993854429986742,
+        "box": {
+          "x": 711,
+          "y": 1855,
+          "width": 209,
+          "height": 57
+        }
+      },
+      {
+        "text": "mg/dl",
+        "confidence": 0.9971145749092102,
+        "box": {
+          "x": 961,
+          "y": 1849,
+          "width": 131,
+          "height": 66
+        }
+      },
+      {
+        "text": "0,82",
+        "confidence": 0.9924420863389969,
+        "box": {
+          "x": 1556,
+          "y": 1845,
+          "width": 104,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "eGFR (CKD-EPI)",
+        "confidence": 0.99164708171572,
+        "box": {
+          "x": 76,
+          "y": 1911,
+          "width": 358,
+          "height": 66
+        }
+      },
+      {
+        "text": ">90",
+        "confidence": 0.9996812542279562,
+        "box": {
+          "x": 711,
+          "y": 1905,
+          "width": 111,
+          "height": 57
+        }
+      },
+      {
+        "text": "ml/min/1.73m²",
+        "confidence": 0.9991806791378901,
+        "box": {
+          "x": 963,
+          "y": 1901,
+          "width": 307,
+          "height": 59
+        }
+      },
+      {
+        "text": "105",
+        "confidence": 0.9999967018763224,
+        "box": {
+          "x": 1569,
+          "y": 1894,
+          "width": 90,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Leukozyten",
+        "confidence": 0.9999930620193481,
+        "box": {
+          "x": 76,
+          "y": 1968,
+          "width": 248,
+          "height": 59
+        }
+      },
+      {
+        "text": "3,7-9,9",
+        "confidence": 0.9956739544868469,
+        "box": {
+          "x": 715,
+          "y": 1958,
+          "width": 158,
+          "height": 57
+        }
+      },
+      {
+        "text": "G/",
+        "confidence": 0.9998909533023834,
+        "box": {
+          "x": 963,
+          "y": 1952,
+          "width": 86,
+          "height": 59
+        }
+      },
+      {
+        "text": "5,5",
+        "confidence": 0.9535393516222636,
+        "box": {
+          "x": 1569,
+          "y": 1946,
+          "width": 86,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Erythrozyten",
+        "confidence": 0.9999820788701376,
+        "box": {
+          "x": 82,
+          "y": 2017,
+          "width": 260,
+          "height": 59
+        }
+      },
+      {
+        "text": "4,4-5,9",
+        "confidence": 0.9956548895154681,
+        "box": {
+          "x": 715,
+          "y": 2007,
+          "width": 162,
+          "height": 57
+        }
+      },
+      {
+        "text": "TA",
+        "confidence": 0.9563477635383606,
+        "box": {
+          "x": 963,
+          "y": 1997,
+          "width": 78,
+          "height": 68
+        }
+      },
+      {
+        "text": "4,9",
+        "confidence": 0.9665983517964681,
+        "box": {
+          "x": 1567,
+          "y": 1991,
+          "width": 86,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "Hämoglobin",
+        "confidence": 0.9993734359741211,
+        "box": {
+          "x": 84,
+          "y": 2068,
+          "width": 252,
+          "height": 55
+        }
+      },
+      {
+        "text": "13,5-17,8",
+        "confidence": 0.998190806971656,
+        "box": {
+          "x": 715,
+          "y": 2056,
+          "width": 211,
+          "height": 57
+        }
+      },
+      {
+        "text": "g/dl",
+        "confidence": 0.9971546232700348,
+        "box": {
+          "x": 942,
+          "y": 2052,
+          "width": 115,
+          "height": 66
+        }
+      },
+      {
+        "text": "14,9",
+        "confidence": 0.9845392405986786,
+        "box": {
+          "x": 1559,
+          "y": 2048,
+          "width": 102,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Hämatokrit",
+        "confidence": 0.999238383769989,
+        "box": {
+          "x": 86,
+          "y": 2116,
+          "width": 227,
+          "height": 55
+        }
+      },
+      {
+        "text": "40-53",
+        "confidence": 0.999992060661316,
+        "box": {
+          "x": 717,
+          "y": 2105,
+          "width": 133,
+          "height": 57
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9999066591262817,
+        "box": {
+          "x": 965,
+          "y": 2099,
+          "width": 63,
+          "height": 66
+        }
+      },
+      {
+        "text": "44",
+        "confidence": 0.9999988079071045,
+        "box": {
+          "x": 1573,
+          "y": 2093,
+          "width": 78,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "MCV",
+        "confidence": 0.999909241994222,
+        "box": {
+          "x": 80,
+          "y": 2163,
+          "width": 117,
+          "height": 59
+        }
+      },
+      {
+        "text": "80-96",
+        "confidence": 0.9999939441680908,
+        "box": {
+          "x": 719,
+          "y": 2157,
+          "width": 129,
+          "height": 55
+        }
+      },
+      {
+        "text": "fl",
+        "confidence": 0.8895901143550873,
+        "box": {
+          "x": 961,
+          "y": 2146,
+          "width": 57,
+          "height": 68
+        }
+      },
+      {
+        "text": "90",
+        "confidence": 0.841246634721756,
+        "box": {
+          "x": 1577,
+          "y": 2140,
+          "width": 76,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "MCHC",
+        "confidence": 0.9999067187309265,
+        "box": {
+          "x": 80,
+          "y": 2214,
+          "width": 150,
+          "height": 57
+        }
+      },
+      {
+        "text": "33-36",
+        "confidence": 0.9999968528747558,
+        "box": {
+          "x": 717,
+          "y": 2206,
+          "width": 133,
+          "height": 57
+        }
+      },
+      {
+        "text": "g/dl",
+        "confidence": 0.981628879904747,
+        "box": {
+          "x": 967,
+          "y": 2198,
+          "width": 96,
+          "height": 76
+        }
+      },
+      {
+        "text": "34",
+        "confidence": 0.9999992847442627,
+        "box": {
+          "x": 1581,
+          "y": 2191,
+          "width": 74,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "MCH",
+        "confidence": 0.99996550877889,
+        "box": {
+          "x": 76,
+          "y": 2265,
+          "width": 123,
+          "height": 59
+        }
+      },
+      {
+        "text": "28-33",
+        "confidence": 0.999996280670166,
+        "box": {
+          "x": 717,
+          "y": 2257,
+          "width": 133,
+          "height": 57
+        }
+      },
+      {
+        "text": "pg",
+        "confidence": 0.9995324611663818,
+        "box": {
+          "x": 969,
+          "y": 2257,
+          "width": 80,
+          "height": 66
+        }
+      },
+      {
+        "text": "31",
+        "confidence": 0.9999975562095642,
+        "box": {
+          "x": 1581,
+          "y": 2243,
+          "width": 78,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "Thrombozyten",
+        "confidence": 0.9999962051709493,
+        "box": {
+          "x": 78,
+          "y": 2316,
+          "width": 299,
+          "height": 59
+        }
+      },
+      {
+        "text": "146-328",
+        "confidence": 0.9999981096812657,
+        "box": {
+          "x": 721,
+          "y": 2308,
+          "width": 180,
+          "height": 57
+        }
+      },
+      {
+        "text": "G/",
+        "confidence": 0.9998830258846283,
+        "box": {
+          "x": 967,
+          "y": 2304,
+          "width": 84,
+          "height": 59
+        }
+      },
+      {
+        "text": "244",
+        "confidence": 0.9999993244806925,
+        "box": {
+          "x": 1575,
+          "y": 2298,
+          "width": 96,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Neutroph. Granulozyten",
+        "confidence": 0.997988373041153,
+        "box": {
+          "x": 76,
+          "y": 2363,
+          "width": 494,
+          "height": 66
+        }
+      },
+      {
+        "text": "40-75",
+        "confidence": 0.9999924898147583,
+        "box": {
+          "x": 721,
+          "y": 2359,
+          "width": 131,
+          "height": 57
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9998444318771362,
+        "box": {
+          "x": 967,
+          "y": 2351,
+          "width": 66,
+          "height": 68
+        }
+      },
+      {
+        "text": "67",
+        "confidence": 0.999998152256012,
+        "box": {
+          "x": 1585,
+          "y": 2349,
+          "width": 78,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Lymphozyten",
+        "confidence": 0.9999931833960793,
+        "box": {
+          "x": 76,
+          "y": 2423,
+          "width": 279,
+          "height": 59
+        }
+      },
+      {
+        "text": "13-45",
+        "confidence": 0.9999959468841553,
+        "box": {
+          "x": 719,
+          "y": 2410,
+          "width": 133,
+          "height": 57
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9999352693557739,
+        "box": {
+          "x": 967,
+          "y": 2402,
+          "width": 63,
+          "height": 68
+        }
+      },
+      {
+        "text": "22",
+        "confidence": 0.999998152256012,
+        "box": {
+          "x": 1589,
+          "y": 2398,
+          "width": 78,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "Monozyten",
+        "confidence": 0.999987416797214,
+        "box": {
+          "x": 74,
+          "y": 2474,
+          "width": 240,
+          "height": 59
+        }
+      },
+      {
+        "text": "4,0-12,0",
+        "confidence": 0.9945289641618729,
+        "box": {
+          "x": 719,
+          "y": 2462,
+          "width": 182,
+          "height": 59
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.999800980091095,
+        "box": {
+          "x": 965,
+          "y": 2451,
+          "width": 70,
+          "height": 76
+        }
+      },
+      {
+        "text": "7,4",
+        "confidence": 0.9871894717216492,
+        "box": {
+          "x": 1587,
+          "y": 2451,
+          "width": 86,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "Eosin. Granulozyten",
+        "confidence": 0.9988872095158225,
+        "box": {
+          "x": 74,
+          "y": 2523,
+          "width": 420,
+          "height": 59
+        }
+      },
+      {
+        "text": "<5.0",
+        "confidence": 0.999373197555542,
+        "box": {
+          "x": 719,
+          "y": 2513,
+          "width": 123,
+          "height": 59
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9999057054519653,
+        "box": {
+          "x": 969,
+          "y": 2503,
+          "width": 66,
+          "height": 76
+        }
+      },
+      {
+        "text": "3,3",
+        "confidence": 0.9949192603429159,
+        "box": {
+          "x": 1587,
+          "y": 2505,
+          "width": 86,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "Basoph. Granulozyten",
+        "confidence": 0.9976794451475144,
+        "box": {
+          "x": 74,
+          "y": 2576,
+          "width": 463,
+          "height": 59
+        }
+      },
+      {
+        "text": "< 1.5",
+        "confidence": 0.9998247474431992,
+        "box": {
+          "x": 719,
+          "y": 2564,
+          "width": 123,
+          "height": 66
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9999359846115112,
+        "box": {
+          "x": 969,
+          "y": 2560,
+          "width": 66,
+          "height": 68
+        }
+      },
+      {
+        "text": "0,9",
+        "confidence": 0.8557847340901693,
+        "box": {
+          "x": 1587,
+          "y": 2560,
+          "width": 86,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Basoph. Granulozyten absolut < 0.08",
+        "confidence": 0.9913592032023839,
+        "box": {
+          "x": 74,
+          "y": 2615,
+          "width": 791,
+          "height": 78
+        }
+      },
+      {
+        "text": "G/",
+        "confidence": 0.999139815568924,
+        "box": {
+          "x": 971,
+          "y": 2611,
+          "width": 86,
+          "height": 68
+        }
+      },
+      {
+        "text": "0,05",
+        "confidence": 0.9952772557735443,
+        "box": {
+          "x": 1579,
+          "y": 2613,
+          "width": 109,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Eosin. Granulozyten absolut",
+        "confidence": 0.9933653076489767,
+        "box": {
+          "x": 76,
+          "y": 2675,
+          "width": 590,
+          "height": 66
+        }
+      },
+      {
+        "text": "<0.44",
+        "confidence": 0.9995442390441894,
+        "box": {
+          "x": 651,
+          "y": 2673,
+          "width": 217,
+          "height": 59
+        }
+      },
+      {
+        "text": "G/I",
+        "confidence": 0.7897304097811381,
+        "box": {
+          "x": 971,
+          "y": 2666,
+          "width": 86,
+          "height": 66
+        }
+      },
+      {
+        "text": "0,18",
+        "confidence": 0.9989047050476074,
+        "box": {
+          "x": 1579,
+          "y": 2666,
+          "width": 109,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "Neutroph.Granulozyten absolut 1,80-6,20",
+        "confidence": 0.9965192874272665,
+        "box": {
+          "x": 74,
+          "y": 2722,
+          "width": 860,
+          "height": 76
+        }
+      },
+      {
+        "text": "G/",
+        "confidence": 0.9991858899593353,
+        "box": {
+          "x": 956,
+          "y": 2720,
+          "width": 100,
+          "height": 66
+        }
+      },
+      {
+        "text": "3,68",
+        "confidence": 0.9969858378171921,
+        "box": {
+          "x": 1583,
+          "y": 2720,
+          "width": 104,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Lymphozyten absolut",
+        "confidence": 0.9997577290785941,
+        "box": {
+          "x": 74,
+          "y": 2783,
+          "width": 444,
+          "height": 66
+        }
+      },
+      {
+        "text": "1,10-3,20",
+        "confidence": 0.9996422727902731,
+        "box": {
+          "x": 721,
+          "y": 2777,
+          "width": 209,
+          "height": 66
+        }
+      },
+      {
+        "text": "G/I",
+        "confidence": 0.8382925192515055,
+        "box": {
+          "x": 965,
+          "y": 2773,
+          "width": 92,
+          "height": 66
+        }
+      },
+      {
+        "text": "1,20",
+        "confidence": 0.9992218613624573,
+        "box": {
+          "x": 1585,
+          "y": 2771,
+          "width": 104,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Monozyten absolut",
+        "confidence": 0.9999947618035709,
+        "box": {
+          "x": 74,
+          "y": 2839,
+          "width": 399,
+          "height": 59
+        }
+      },
+      {
+        "text": "0,25-0,85",
+        "confidence": 0.9904010362095303,
+        "box": {
+          "x": 721,
+          "y": 2832,
+          "width": 209,
+          "height": 59
+        }
+      },
+      {
+        "text": "G/I",
+        "confidence": 0.7699669698874155,
+        "box": {
+          "x": 961,
+          "y": 2826,
+          "width": 98,
+          "height": 66
+        }
+      },
+      {
+        "text": "0,41",
+        "confidence": 0.9990476965904236,
+        "box": {
+          "x": 1585,
+          "y": 2826,
+          "width": 109,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "RDW",
+        "confidence": 0.999987800916036,
+        "box": {
+          "x": 70,
+          "y": 2892,
+          "width": 131,
+          "height": 59
+        }
+      },
+      {
+        "text": "11,6-14,4",
+        "confidence": 0.9992624653710259,
+        "box": {
+          "x": 723,
+          "y": 2886,
+          "width": 207,
+          "height": 57
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9828585386276245,
+        "box": {
+          "x": 975,
+          "y": 2879,
+          "width": 63,
+          "height": 68
+        }
+      },
+      {
+        "text": "13,5",
+        "confidence": 0.9850054383277893,
+        "box": {
+          "x": 1589,
+          "y": 2879,
+          "width": 106,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "MPV (mittleres Thromboz.-Vol.) 9-13",
+        "confidence": 0.9961833170482091,
+        "box": {
+          "x": 74,
+          "y": 2939,
+          "width": 760,
+          "height": 66
+        }
+      },
+      {
+        "text": "fl",
+        "confidence": 0.8395616412162781,
+        "box": {
+          "x": 969,
+          "y": 2929,
+          "width": 63,
+          "height": 76
+        }
+      },
+      {
+        "text": "11",
+        "confidence": 0.9996433258056641,
+        "box": {
+          "x": 1610,
+          "y": 2927,
+          "width": 70,
+          "height": 68
+        }
+      }
+    ],
+    [
+      {
+        "text": "TSH basal",
+        "confidence": 0.999965680970086,
+        "box": {
+          "x": 74,
+          "y": 2998,
+          "width": 223,
+          "height": 55
+        }
+      },
+      {
+        "text": "0,27-4,20",
+        "confidence": 0.99853605694241,
+        "box": {
+          "x": 723,
+          "y": 2992,
+          "width": 213,
+          "height": 59
+        }
+      },
+      {
+        "text": "mU/I",
+        "confidence": 0.776492103934288,
+        "box": {
+          "x": 977,
+          "y": 2992,
+          "width": 117,
+          "height": 59
+        }
+      },
+      {
+        "text": "0,86",
+        "confidence": 0.9990683794021606,
+        "box": {
+          "x": 1589,
+          "y": 2986,
+          "width": 109,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "fT3 (freies T3)",
+        "confidence": 0.9999565402666728,
+        "box": {
+          "x": 68,
+          "y": 3045,
+          "width": 303,
+          "height": 68
+        }
+      },
+      {
+        "text": "3,10-6,80",
+        "confidence": 0.999209463596344,
+        "box": {
+          "x": 727,
+          "y": 3045,
+          "width": 209,
+          "height": 59
+        }
+      },
+      {
+        "text": "pmol/l",
+        "confidence": 0.9310880402723948,
+        "box": {
+          "x": 963,
+          "y": 3043,
+          "width": 160,
+          "height": 66
+        }
+      },
+      {
+        "text": "3,86",
+        "confidence": 0.9983140826225281,
+        "box": {
+          "x": 1591,
+          "y": 3039,
+          "width": 106,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "fT4 (freies T4)",
+        "confidence": 0.9991246978441874,
+        "box": {
+          "x": 66,
+          "y": 3107,
+          "width": 301,
+          "height": 59
+        }
+      },
+      {
+        "text": "12,0-22,0",
+        "confidence": 0.998173905743493,
+        "box": {
+          "x": 727,
+          "y": 3101,
+          "width": 209,
+          "height": 59
+        }
+      },
+      {
+        "text": "pmol/l",
+        "confidence": 0.9598574241002401,
+        "box": {
+          "x": 977,
+          "y": 3101,
+          "width": 145,
+          "height": 66
+        }
+      },
+      {
+        "text": "14,8",
+        "confidence": 0.9985516667366028,
+        "box": {
+          "x": 1593,
+          "y": 3090,
+          "width": 111,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "Ferritin",
+        "confidence": 0.9999908804893494,
+        "box": {
+          "x": 63,
+          "y": 3162,
+          "width": 164,
+          "height": 59
+        }
+      },
+      {
+        "text": "13-400",
+        "confidence": 0.9999981919924418,
+        "box": {
+          "x": 727,
+          "y": 3154,
+          "width": 156,
+          "height": 57
+        }
+      },
+      {
+        "text": "ng/ml",
+        "confidence": 0.9998489737510681,
+        "box": {
+          "x": 981,
+          "y": 3154,
+          "width": 137,
+          "height": 68
+        }
+      },
+      {
+        "text": "96",
+        "confidence": 0.9979737401008606,
+        "box": {
+          "x": 1376,
+          "y": 3142,
+          "width": 74,
+          "height": 68
+        }
+      }
+    ],
+    [
+      {
+        "text": "Vitamin B12",
+        "confidence": 0.9999948089773004,
+        "box": {
+          "x": 63,
+          "y": 3215,
+          "width": 264,
+          "height": 59
+        }
+      },
+      {
+        "text": "210-945",
+        "confidence": 0.9999985694885254,
+        "box": {
+          "x": 725,
+          "y": 3209,
+          "width": 188,
+          "height": 57
+        }
+      },
+      {
+        "text": "pg/ml",
+        "confidence": 0.9999255657196044,
+        "box": {
+          "x": 985,
+          "y": 3211,
+          "width": 131,
+          "height": 68
+        }
+      },
+      {
+        "text": "487",
+        "confidence": 0.9999991655349731,
+        "box": {
+          "x": 1366,
+          "y": 3201,
+          "width": 94,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "TSH",
+        "confidence": 0.9999874830245972,
+        "box": {
+          "x": 59,
+          "y": 3269,
+          "width": 113,
+          "height": 66
+        }
+      },
+      {
+        "text": "0,27-4,20",
+        "confidence": 0.9991689191924201,
+        "box": {
+          "x": 725,
+          "y": 3265,
+          "width": 211,
+          "height": 59
+        }
+      },
+      {
+        "text": "μU/ml",
+        "confidence": 0.9275660634040832,
+        "box": {
+          "x": 981,
+          "y": 3267,
+          "width": 143,
+          "height": 66
+        }
+      },
+      {
+        "text": "0,88",
+        "confidence": 0.9988776594400406,
+        "box": {
+          "x": 1362,
+          "y": 3260,
+          "width": 106,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "Folsäure",
+        "confidence": 0.9999486580491066,
+        "box": {
+          "x": 59,
+          "y": 3330,
+          "width": 197,
+          "height": 57
+        }
+      },
+      {
+        "text": "4.6-18.7",
+        "confidence": 0.999991312623024,
+        "box": {
+          "x": 727,
+          "y": 3322,
+          "width": 182,
+          "height": 57
+        }
+      },
+      {
+        "text": "ng/ml",
+        "confidence": 0.9997871398925782,
+        "box": {
+          "x": 985,
+          "y": 3322,
+          "width": 133,
+          "height": 68
+        }
+      },
+      {
+        "text": "6,8",
+        "confidence": 0.9711652199427286,
+        "box": {
+          "x": 1372,
+          "y": 3316,
+          "width": 86,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "CEA",
+        "confidence": 0.9999864101409912,
+        "box": {
+          "x": 57,
+          "y": 3383,
+          "width": 117,
+          "height": 59
+        }
+      },
+      {
+        "text": "< 4.7",
+        "confidence": 0.999904215335846,
+        "box": {
+          "x": 725,
+          "y": 3375,
+          "width": 125,
+          "height": 66
+        }
+      },
+      {
+        "text": "ng/ml",
+        "confidence": 0.9998328804969787,
+        "box": {
+          "x": 987,
+          "y": 3379,
+          "width": 131,
+          "height": 66
+        }
+      },
+      {
+        "text": "2,4",
+        "confidence": 0.9976952274640402,
+        "box": {
+          "x": 1372,
+          "y": 3369,
+          "width": 94,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "S-100",
+        "confidence": 0.999990701675415,
+        "box": {
+          "x": 57,
+          "y": 3441,
+          "width": 139,
+          "height": 59
+        }
+      },
+      {
+        "text": "< 0.100",
+        "confidence": 0.9674932530948094,
+        "box": {
+          "x": 727,
+          "y": 3430,
+          "width": 174,
+          "height": 59
+        }
+      },
+      {
+        "text": "/1",
+        "confidence": 0.5544256269931793,
+        "box": {
+          "x": 983,
+          "y": 3430,
+          "width": 82,
+          "height": 76
+        }
+      },
+      {
+        "text": "0,08",
+        "confidence": 0.9988341480493546,
+        "box": {
+          "x": 1366,
+          "y": 3422,
+          "width": 106,
+          "height": 68
+        }
+      }
+    ],
+    [
+      {
+        "text": "CRP (C-reaktives Protein)",
+        "confidence": 0.9924297714233399,
+        "box": {
+          "x": 57,
+          "y": 3492,
+          "width": 555,
+          "height": 68
+        }
+      },
+      {
+        "text": "bis 5.00",
+        "confidence": 0.9999687969684601,
+        "box": {
+          "x": 725,
+          "y": 3490,
+          "width": 182,
+          "height": 59
+        }
+      },
+      {
+        "text": "mg/l",
+        "confidence": 0.90294349193573,
+        "box": {
+          "x": 985,
+          "y": 3490,
+          "width": 115,
+          "height": 76
+        }
+      },
+      {
+        "text": "2,5",
+        "confidence": 0.998365044593811,
+        "box": {
+          "x": 1378,
+          "y": 3480,
+          "width": 86,
+          "height": 68
+        }
+      }
+    ]
+  ]
+}

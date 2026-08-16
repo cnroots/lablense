@@ -1,0 +1,928 @@
+{
+  "file": "sample001.jpg",
+  "model": "v6-medium",
+  "angle": 270,
+  "width": 2048,
+  "confidence": 0.9648606457063693,
+  "text": "hausärzte\namperland\nLaborblatt vom 13.08.2026 Seite 1 von 1\nNeubauer, Nadine, (56362), geb. 20.07.1975\n06.08.2026\nMineralstoffe Zink im Serum 600,0-1200.0 ug/l 565 (-)\n54\nVitamine Vitamin B 12 LIA Eisen Ferritin 15,0-300.0 ng/ml\n>200.0 pg/ml 776\nVitamin-D3 (25-OH) (FREND) 20-70 ng/ml 49,10\nSchilddrüse TSH 0,27-4,2 uiU/ml 1,41\nfreies T3 2,0-4,4 pg/ml 2,32\nfreies T4 0.9-2.0\nTSH-Rezeptor Ak\nng/di 1,07\nIUA <0.801..\nTPO-AK LIA U/ml <8U/ml\nTAK (Thyreoglobulin Ak) <115.0 U/ml 17\nDocosahexaensäure (DHA) >7.5% Eicosapentaensäure (EPA) >2.1% % 0,92\n% 8,08\nAlpha-Linolensäure % 0.21\nGamma-Linolensäure % 0.10\nDihomo-gamma-Linolensäure % 2,32\nArachidonsäure (AA) <17.9 % % 19.4\nOmega-3-Index(EPA+DHA) 8,0-11.0 Omega-6-/Omega-3-Quotient 0.0-2.5 AA/EPA 0.0-5.0 1 21,1(+)\nE1 3.1(+)\n% 9,0\n% 12,9\nDocosapentaens.-n3 (DPA) Linolsäure\nDocosatetraensäure (DTA)\n%%%% % 3,30 3,46\nDocosapentaens.-n6 (DPA) 0.71\n14.0\nOlsäure",
+  "lines": [
+    [
+      {
+        "text": "hausärzte",
+        "confidence": 0.9999653961923387,
+        "box": {
+          "x": 1435,
+          "y": 96,
+          "width": 185,
+          "height": 49
+        }
+      }
+    ],
+    [
+      {
+        "text": "amperland",
+        "confidence": 0.9999963310029771,
+        "box": {
+          "x": 1437,
+          "y": 133,
+          "width": 208,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Laborblatt vom 13.08.2026",
+        "confidence": 0.9999811744689941,
+        "box": {
+          "x": 869,
+          "y": 176,
+          "width": 325,
+          "height": 41
+        }
+      },
+      {
+        "text": "Seite 1 von 1",
+        "confidence": 0.9978428207910978,
+        "box": {
+          "x": 1364,
+          "y": 188,
+          "width": 168,
+          "height": 29
+        }
+      }
+    ],
+    [
+      {
+        "text": "Neubauer, Nadine, (56362), geb. 20.07.1975",
+        "confidence": 0.98908031696365,
+        "box": {
+          "x": 780,
+          "y": 209,
+          "width": 544,
+          "height": 49
+        }
+      }
+    ],
+    [
+      {
+        "text": "06.08.2026",
+        "confidence": 0.9999674558639526,
+        "box": {
+          "x": 1141,
+          "y": 263,
+          "width": 115,
+          "height": 29
+        }
+      }
+    ],
+    [
+      {
+        "text": "Mineralstoffe Zink im Serum",
+        "confidence": 0.9997554686334398,
+        "box": {
+          "x": 528,
+          "y": 301,
+          "width": 276,
+          "height": 31
+        }
+      },
+      {
+        "text": "600,0-1200.0 ug/l",
+        "confidence": 0.8882724607692045,
+        "box": {
+          "x": 940,
+          "y": 289,
+          "width": 181,
+          "height": 35
+        }
+      },
+      {
+        "text": "565 (-)",
+        "confidence": 0.9319994194167001,
+        "box": {
+          "x": 1164,
+          "y": 288,
+          "width": 73,
+          "height": 29
+        }
+      }
+    ],
+    [
+      {
+        "text": "54",
+        "confidence": 0.9999977946281433,
+        "box": {
+          "x": 1183,
+          "y": 311,
+          "width": 37,
+          "height": 29
+        }
+      }
+    ],
+    [
+      {
+        "text": "Vitamine Vitamin B 12 LIA",
+        "confidence": 0.9838947367668152,
+        "box": {
+          "x": 524,
+          "y": 343,
+          "width": 305,
+          "height": 41
+        }
+      },
+      {
+        "text": "Eisen",
+        "confidence": 0.9997333526611328,
+        "box": {
+          "x": 525,
+          "y": 328,
+          "width": 67,
+          "height": 29
+        }
+      },
+      {
+        "text": "Ferritin",
+        "confidence": 0.9999098479747772,
+        "box": {
+          "x": 652,
+          "y": 327,
+          "width": 80,
+          "height": 25
+        }
+      },
+      {
+        "text": "15,0-300.0 ng/ml",
+        "confidence": 0.9750233478844166,
+        "box": {
+          "x": 940,
+          "y": 312,
+          "width": 201,
+          "height": 36
+        }
+      }
+    ],
+    [
+      {
+        "text": ">200.0",
+        "confidence": 0.9932099282741547,
+        "box": {
+          "x": 941,
+          "y": 340,
+          "width": 83,
+          "height": 29
+        }
+      },
+      {
+        "text": "pg/ml",
+        "confidence": 0.9988368153572083,
+        "box": {
+          "x": 1073,
+          "y": 335,
+          "width": 69,
+          "height": 36
+        }
+      },
+      {
+        "text": "776",
+        "confidence": 0.9999974171320597,
+        "box": {
+          "x": 1179,
+          "y": 333,
+          "width": 48,
+          "height": 29
+        }
+      }
+    ],
+    [
+      {
+        "text": "Vitamin-D3 (25-OH) (FREND) 20-70",
+        "confidence": 0.9810491073876619,
+        "box": {
+          "x": 652,
+          "y": 361,
+          "width": 361,
+          "height": 43
+        }
+      },
+      {
+        "text": "ng/ml",
+        "confidence": 0.9988884449005127,
+        "box": {
+          "x": 1077,
+          "y": 360,
+          "width": 68,
+          "height": 31
+        }
+      },
+      {
+        "text": "49,10",
+        "confidence": 0.9990041017532348,
+        "box": {
+          "x": 1172,
+          "y": 356,
+          "width": 65,
+          "height": 31
+        }
+      }
+    ],
+    [
+      {
+        "text": "Schilddrüse TSH",
+        "confidence": 0.9963934421539307,
+        "box": {
+          "x": 523,
+          "y": 393,
+          "width": 189,
+          "height": 36
+        }
+      },
+      {
+        "text": "0,27-4,2",
+        "confidence": 0.9689863324165344,
+        "box": {
+          "x": 941,
+          "y": 387,
+          "width": 96,
+          "height": 31
+        }
+      },
+      {
+        "text": "uiU/ml",
+        "confidence": 0.7327827662229538,
+        "box": {
+          "x": 1077,
+          "y": 381,
+          "width": 77,
+          "height": 35
+        }
+      },
+      {
+        "text": "1,41",
+        "confidence": 0.9997812360525131,
+        "box": {
+          "x": 1177,
+          "y": 381,
+          "width": 53,
+          "height": 29
+        }
+      }
+    ],
+    [
+      {
+        "text": "freies T3",
+        "confidence": 0.9998688300450643,
+        "box": {
+          "x": 651,
+          "y": 416,
+          "width": 101,
+          "height": 36
+        }
+      },
+      {
+        "text": "2,0-4,4",
+        "confidence": 0.9810123103005546,
+        "box": {
+          "x": 944,
+          "y": 409,
+          "width": 83,
+          "height": 35
+        }
+      },
+      {
+        "text": "pg/ml",
+        "confidence": 0.9991893291473388,
+        "box": {
+          "x": 1076,
+          "y": 406,
+          "width": 72,
+          "height": 36
+        }
+      },
+      {
+        "text": "2,32",
+        "confidence": 0.970052033662796,
+        "box": {
+          "x": 1180,
+          "y": 404,
+          "width": 55,
+          "height": 31
+        }
+      }
+    ],
+    [
+      {
+        "text": "freies T4",
+        "confidence": 0.9998930162853665,
+        "box": {
+          "x": 652,
+          "y": 440,
+          "width": 99,
+          "height": 35
+        }
+      },
+      {
+        "text": "0.9-2.0",
+        "confidence": 0.8866587281227112,
+        "box": {
+          "x": 944,
+          "y": 432,
+          "width": 84,
+          "height": 36
+        }
+      }
+    ],
+    [
+      {
+        "text": "TSH-Rezeptor Ak",
+        "confidence": 0.9724071184794109,
+        "box": {
+          "x": 651,
+          "y": 463,
+          "width": 185,
+          "height": 37
+        }
+      }
+    ],
+    [
+      {
+        "text": "ng/di",
+        "confidence": 0.8879724264144897,
+        "box": {
+          "x": 1080,
+          "y": 429,
+          "width": 61,
+          "height": 35
+        }
+      },
+      {
+        "text": "1,07",
+        "confidence": 0.9411564469337463,
+        "box": {
+          "x": 1180,
+          "y": 428,
+          "width": 56,
+          "height": 31
+        }
+      }
+    ],
+    [
+      {
+        "text": "IUA",
+        "confidence": 0.8418357372283936,
+        "box": {
+          "x": 1080,
+          "y": 455,
+          "width": 53,
+          "height": 31
+        }
+      },
+      {
+        "text": "<0.801..",
+        "confidence": 0.9460223391652107,
+        "box": {
+          "x": 1164,
+          "y": 452,
+          "width": 92,
+          "height": 31
+        }
+      }
+    ],
+    [
+      {
+        "text": "TPO-AK LIA",
+        "confidence": 0.9842465639114379,
+        "box": {
+          "x": 649,
+          "y": 487,
+          "width": 135,
+          "height": 36
+        }
+      },
+      {
+        "text": "U/ml",
+        "confidence": 0.9532747268676758,
+        "box": {
+          "x": 1081,
+          "y": 476,
+          "width": 59,
+          "height": 35
+        }
+      },
+      {
+        "text": "<8U/ml",
+        "confidence": 0.9901682833830515,
+        "box": {
+          "x": 1165,
+          "y": 476,
+          "width": 91,
+          "height": 31
+        }
+      }
+    ],
+    [
+      {
+        "text": "TAK (Thyreoglobulin Ak)",
+        "confidence": 0.9588821737662606,
+        "box": {
+          "x": 652,
+          "y": 508,
+          "width": 249,
+          "height": 41
+        }
+      },
+      {
+        "text": "<115.0",
+        "confidence": 0.9300438662370046,
+        "box": {
+          "x": 947,
+          "y": 507,
+          "width": 81,
+          "height": 31
+        }
+      },
+      {
+        "text": "U/ml",
+        "confidence": 0.9979255348443985,
+        "box": {
+          "x": 1081,
+          "y": 504,
+          "width": 59,
+          "height": 29
+        }
+      },
+      {
+        "text": "17",
+        "confidence": 0.9999133944511414,
+        "box": {
+          "x": 1193,
+          "y": 497,
+          "width": 37,
+          "height": 35
+        }
+      }
+    ],
+    [
+      {
+        "text": "Docosahexaensäure (DHA) >7.5%",
+        "confidence": 0.9315698229033371,
+        "box": {
+          "x": 648,
+          "y": 552,
+          "width": 392,
+          "height": 48
+        }
+      },
+      {
+        "text": "Eicosapentaensäure (EPA)",
+        "confidence": 0.9688603108127912,
+        "box": {
+          "x": 651,
+          "y": 534,
+          "width": 281,
+          "height": 43
+        }
+      },
+      {
+        "text": ">2.1%",
+        "confidence": 0.9955568432807922,
+        "box": {
+          "x": 940,
+          "y": 531,
+          "width": 97,
+          "height": 35
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9998680353164673,
+        "box": {
+          "x": 1083,
+          "y": 527,
+          "width": 35,
+          "height": 35
+        }
+      },
+      {
+        "text": "0,92",
+        "confidence": 0.9935980588197708,
+        "box": {
+          "x": 1188,
+          "y": 527,
+          "width": 52,
+          "height": 31
+        }
+      }
+    ],
+    [
+      {
+        "text": "%",
+        "confidence": 0.9998595714569092,
+        "box": {
+          "x": 1080,
+          "y": 549,
+          "width": 40,
+          "height": 36
+        }
+      },
+      {
+        "text": "8,08",
+        "confidence": 0.9875815361738205,
+        "box": {
+          "x": 1188,
+          "y": 551,
+          "width": 52,
+          "height": 31
+        }
+      }
+    ],
+    [
+      {
+        "text": "Alpha-Linolensäure",
+        "confidence": 0.9998211595747206,
+        "box": {
+          "x": 649,
+          "y": 587,
+          "width": 208,
+          "height": 36
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9999147653579712,
+        "box": {
+          "x": 1084,
+          "y": 575,
+          "width": 37,
+          "height": 36
+        }
+      },
+      {
+        "text": "0.21",
+        "confidence": 0.9983536154031754,
+        "box": {
+          "x": 1189,
+          "y": 573,
+          "width": 53,
+          "height": 35
+        }
+      }
+    ],
+    [
+      {
+        "text": "Gamma-Linolensäure",
+        "confidence": 0.9995077417956458,
+        "box": {
+          "x": 649,
+          "y": 611,
+          "width": 228,
+          "height": 37
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9999427795410156,
+        "box": {
+          "x": 1081,
+          "y": 600,
+          "width": 40,
+          "height": 37
+        }
+      },
+      {
+        "text": "0.10",
+        "confidence": 0.9103068262338638,
+        "box": {
+          "x": 1191,
+          "y": 599,
+          "width": 55,
+          "height": 35
+        }
+      }
+    ],
+    [
+      {
+        "text": "Dihomo-gamma-Linolensäure",
+        "confidence": 0.9965464115142822,
+        "box": {
+          "x": 648,
+          "y": 632,
+          "width": 312,
+          "height": 43
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9998821020126343,
+        "box": {
+          "x": 1083,
+          "y": 624,
+          "width": 41,
+          "height": 37
+        }
+      },
+      {
+        "text": "2,32",
+        "confidence": 0.9934204816818237,
+        "box": {
+          "x": 1189,
+          "y": 623,
+          "width": 56,
+          "height": 35
+        }
+      }
+    ],
+    [
+      {
+        "text": "Arachidonsäure (AA)",
+        "confidence": 0.9886053518245095,
+        "box": {
+          "x": 648,
+          "y": 662,
+          "width": 227,
+          "height": 37
+        }
+      },
+      {
+        "text": "<17.9 %",
+        "confidence": 0.9925056298573812,
+        "box": {
+          "x": 948,
+          "y": 653,
+          "width": 106,
+          "height": 36
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9792714715003967,
+        "box": {
+          "x": 1083,
+          "y": 647,
+          "width": 44,
+          "height": 48
+        }
+      },
+      {
+        "text": "19.4",
+        "confidence": 0.9762070626020432,
+        "box": {
+          "x": 1193,
+          "y": 647,
+          "width": 56,
+          "height": 37
+        }
+      }
+    ],
+    [
+      {
+        "text": "Omega-3-Index(EPA+DHA) 8,0-11.0",
+        "confidence": 0.9174964120311122,
+        "box": {
+          "x": 647,
+          "y": 728,
+          "width": 404,
+          "height": 55
+        }
+      },
+      {
+        "text": "Omega-6-/Omega-3-Quotient 0.0-2.5",
+        "confidence": 0.9008883191272616,
+        "box": {
+          "x": 647,
+          "y": 705,
+          "width": 393,
+          "height": 49
+        }
+      },
+      {
+        "text": "AA/EPA",
+        "confidence": 0.8778559366861979,
+        "box": {
+          "x": 649,
+          "y": 689,
+          "width": 93,
+          "height": 35
+        }
+      },
+      {
+        "text": "0.0-5.0",
+        "confidence": 0.9622670837811061,
+        "box": {
+          "x": 951,
+          "y": 680,
+          "width": 87,
+          "height": 36
+        }
+      },
+      {
+        "text": "1",
+        "confidence": 0.9059796929359436,
+        "box": {
+          "x": 1089,
+          "y": 677,
+          "width": 39,
+          "height": 36
+        }
+      },
+      {
+        "text": "21,1(+)",
+        "confidence": 0.981001113142286,
+        "box": {
+          "x": 1179,
+          "y": 675,
+          "width": 85,
+          "height": 35
+        }
+      }
+    ],
+    [
+      {
+        "text": "E1",
+        "confidence": 0.5925915837287903,
+        "box": {
+          "x": 1092,
+          "y": 697,
+          "width": 37,
+          "height": 43
+        }
+      },
+      {
+        "text": "3.1(+)",
+        "confidence": 0.9285087883472443,
+        "box": {
+          "x": 1181,
+          "y": 701,
+          "width": 83,
+          "height": 35
+        }
+      }
+    ],
+    [
+      {
+        "text": "%",
+        "confidence": 0.9997143149375916,
+        "box": {
+          "x": 1091,
+          "y": 724,
+          "width": 36,
+          "height": 43
+        }
+      },
+      {
+        "text": "9,0",
+        "confidence": 0.9560878674189249,
+        "box": {
+          "x": 1201,
+          "y": 725,
+          "width": 44,
+          "height": 35
+        }
+      }
+    ],
+    [
+      {
+        "text": "%",
+        "confidence": 0.9998621940612793,
+        "box": {
+          "x": 1092,
+          "y": 751,
+          "width": 37,
+          "height": 43
+        }
+      },
+      {
+        "text": "12,9",
+        "confidence": 0.9466748982667923,
+        "box": {
+          "x": 1200,
+          "y": 752,
+          "width": 53,
+          "height": 35
+        }
+      }
+    ],
+    [
+      {
+        "text": "Docosapentaens.-n3 (DPA)",
+        "confidence": 0.9306778758764267,
+        "box": {
+          "x": 647,
+          "y": 785,
+          "width": 292,
+          "height": 48
+        }
+      },
+      {
+        "text": "Linolsäure",
+        "confidence": 0.999395340681076,
+        "box": {
+          "x": 649,
+          "y": 769,
+          "width": 119,
+          "height": 35
+        }
+      }
+    ],
+    [
+      {
+        "text": "Docosatetraensäure (DTA)",
+        "confidence": 0.9840464020768801,
+        "box": {
+          "x": 648,
+          "y": 813,
+          "width": 289,
+          "height": 47
+        }
+      }
+    ],
+    [
+      {
+        "text": "%%%%",
+        "confidence": 0.8786850422620773,
+        "box": {
+          "x": 1076,
+          "y": 784,
+          "width": 71,
+          "height": 131
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9998644590377808,
+        "box": {
+          "x": 1093,
+          "y": 776,
+          "width": 36,
+          "height": 41
+        }
+      },
+      {
+        "text": "3,30",
+        "confidence": 0.9889013171195984,
+        "box": {
+          "x": 1199,
+          "y": 776,
+          "width": 55,
+          "height": 35
+        }
+      },
+      {
+        "text": "3,46",
+        "confidence": 0.9899867177009583,
+        "box": {
+          "x": 1200,
+          "y": 803,
+          "width": 53,
+          "height": 35
+        }
+      }
+    ],
+    [
+      {
+        "text": "Docosapentaens.-n6 (DPA)",
+        "confidence": 0.9948995113372803,
+        "box": {
+          "x": 652,
+          "y": 840,
+          "width": 288,
+          "height": 43
+        }
+      },
+      {
+        "text": "0.71",
+        "confidence": 0.996431291103363,
+        "box": {
+          "x": 1200,
+          "y": 828,
+          "width": 57,
+          "height": 36
+        }
+      }
+    ],
+    [
+      {
+        "text": "14.0",
+        "confidence": 0.9854147583246231,
+        "box": {
+          "x": 1201,
+          "y": 853,
+          "width": 65,
+          "height": 37
+        }
+      }
+    ],
+    [
+      {
+        "text": "Olsäure",
+        "confidence": 0.9098720124789647,
+        "box": {
+          "x": 652,
+          "y": 872,
+          "width": 100,
+          "height": 36
+        }
+      }
+    ]
+  ]
+}

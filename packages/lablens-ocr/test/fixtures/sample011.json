@@ -1,0 +1,416 @@
+{
+  "file": "sample011.jpg",
+  "model": "v6-medium",
+  "angle": 0,
+  "width": 1844,
+  "confidence": 0.987484188721239,
+  "text": "ALBIS Laborblatt vom 02.06.2026 Seite 2 von 2\nNeubauer, Thomas, (9018), geb. 26.01.1978\n29.05.202628.05.2026\nEOS 0.74-6.73 % 4,06\nBASO 0.05 - 0.48 % 0.52(+)\nLYM2 1.15 - 3.52 x103/μL 1,51\nMON2 0.25 - 0.99 x10³/μL 0,38\nNEU2 1.85 - 6.72 x10³/μL 2,17\nEOS2 0.04-0.48 x103/μL 0,17\nBASO2 0.00-0.03 x103/μL 0,02\nI?slicher Transferrinrezeptor 1,71-4,13 mg/ 2,42\nBefund validiert von: Dr. Farz..\n(*) Die Normwerte haben sich im dargestellten Zeitraum geändert.",
+  "lines": [
+    [
+      {
+        "text": "ALBIS",
+        "confidence": 0.9996652960777282,
+        "box": {
+          "x": 55,
+          "y": 758,
+          "width": 113,
+          "height": 47
+        }
+      },
+      {
+        "text": "Laborblatt vom 02.06.2026",
+        "confidence": 0.9995993900299073,
+        "box": {
+          "x": 582,
+          "y": 778,
+          "width": 682,
+          "height": 55
+        }
+      },
+      {
+        "text": "Seite 2 von 2",
+        "confidence": 0.997369972559122,
+        "box": {
+          "x": 1446,
+          "y": 797,
+          "width": 375,
+          "height": 55
+        }
+      }
+    ],
+    [
+      {
+        "text": "Neubauer, Thomas, (9018), geb. 26.01.1978",
+        "confidence": 0.9942841893289147,
+        "box": {
+          "x": 401,
+          "y": 834,
+          "width": 1126,
+          "height": 68
+        }
+      }
+    ],
+    [
+      {
+        "text": "29.05.202628.05.2026",
+        "confidence": 0.9999011099338532,
+        "box": {
+          "x": 1190,
+          "y": 913,
+          "width": 475,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "EOS",
+        "confidence": 0.9998545447985331,
+        "box": {
+          "x": 33,
+          "y": 979,
+          "width": 115,
+          "height": 59
+        }
+      },
+      {
+        "text": "0.74-6.73 %",
+        "confidence": 0.9948254390196367,
+        "box": {
+          "x": 608,
+          "y": 971,
+          "width": 342,
+          "height": 68
+        }
+      },
+      {
+        "text": "4,06",
+        "confidence": 0.9993285983800888,
+        "box": {
+          "x": 1489,
+          "y": 965,
+          "width": 111,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "BASO",
+        "confidence": 0.9998571127653122,
+        "box": {
+          "x": 37,
+          "y": 1032,
+          "width": 137,
+          "height": 55
+        }
+      },
+      {
+        "text": "0.05 - 0.48",
+        "confidence": 0.9715660810470581,
+        "box": {
+          "x": 610,
+          "y": 1028,
+          "width": 233,
+          "height": 55
+        }
+      },
+      {
+        "text": "%",
+        "confidence": 0.9999929666519165,
+        "box": {
+          "x": 827,
+          "y": 1016,
+          "width": 123,
+          "height": 78
+        }
+      },
+      {
+        "text": "0.52(+)",
+        "confidence": 0.9960100906235831,
+        "box": {
+          "x": 1456,
+          "y": 1018,
+          "width": 178,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "LYM2",
+        "confidence": 0.9828090220689774,
+        "box": {
+          "x": 35,
+          "y": 1083,
+          "width": 129,
+          "height": 57
+        }
+      },
+      {
+        "text": "1.15 - 3.52",
+        "confidence": 0.9242610172791914,
+        "box": {
+          "x": 612,
+          "y": 1081,
+          "width": 240,
+          "height": 55
+        }
+      },
+      {
+        "text": "x103/μL",
+        "confidence": 0.9454339912959507,
+        "box": {
+          "x": 834,
+          "y": 1075,
+          "width": 221,
+          "height": 66
+        }
+      },
+      {
+        "text": "1,51",
+        "confidence": 0.9998898059129715,
+        "box": {
+          "x": 1493,
+          "y": 1069,
+          "width": 106,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "MON2",
+        "confidence": 0.9999541938304901,
+        "box": {
+          "x": 37,
+          "y": 1137,
+          "width": 143,
+          "height": 57
+        }
+      },
+      {
+        "text": "0.25 - 0.99",
+        "confidence": 0.9596910422498529,
+        "box": {
+          "x": 610,
+          "y": 1133,
+          "width": 236,
+          "height": 57
+        }
+      },
+      {
+        "text": "x10³/μL",
+        "confidence": 0.9527147582599095,
+        "box": {
+          "x": 883,
+          "y": 1133,
+          "width": 172,
+          "height": 59
+        }
+      },
+      {
+        "text": "0,38",
+        "confidence": 0.9993129968643188,
+        "box": {
+          "x": 1491,
+          "y": 1126,
+          "width": 104,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "NEU2",
+        "confidence": 0.9999730587005615,
+        "box": {
+          "x": 41,
+          "y": 1188,
+          "width": 131,
+          "height": 57
+        }
+      },
+      {
+        "text": "1.85 - 6.72",
+        "confidence": 0.9580151330340992,
+        "box": {
+          "x": 610,
+          "y": 1186,
+          "width": 238,
+          "height": 57
+        }
+      },
+      {
+        "text": "x10³/μL",
+        "confidence": 0.9732432791164943,
+        "box": {
+          "x": 883,
+          "y": 1186,
+          "width": 172,
+          "height": 59
+        }
+      },
+      {
+        "text": "2,17",
+        "confidence": 0.9997626394033432,
+        "box": {
+          "x": 1487,
+          "y": 1180,
+          "width": 106,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "EOS2",
+        "confidence": 0.999810516834259,
+        "box": {
+          "x": 43,
+          "y": 1239,
+          "width": 131,
+          "height": 59
+        }
+      },
+      {
+        "text": "0.04-0.48",
+        "confidence": 0.9999826219346788,
+        "box": {
+          "x": 612,
+          "y": 1239,
+          "width": 233,
+          "height": 57
+        }
+      },
+      {
+        "text": "x103/μL",
+        "confidence": 0.9597860659871783,
+        "box": {
+          "x": 834,
+          "y": 1235,
+          "width": 221,
+          "height": 66
+        }
+      },
+      {
+        "text": "0,17",
+        "confidence": 0.999242514371872,
+        "box": {
+          "x": 1485,
+          "y": 1231,
+          "width": 106,
+          "height": 59
+        }
+      }
+    ],
+    [
+      {
+        "text": "BASO2",
+        "confidence": 0.9998664259910583,
+        "box": {
+          "x": 49,
+          "y": 1294,
+          "width": 158,
+          "height": 55
+        }
+      },
+      {
+        "text": "0.00-0.03",
+        "confidence": 0.9995937082502577,
+        "box": {
+          "x": 612,
+          "y": 1290,
+          "width": 233,
+          "height": 57
+        }
+      },
+      {
+        "text": "x103/μL",
+        "confidence": 0.9446570958409991,
+        "box": {
+          "x": 827,
+          "y": 1286,
+          "width": 227,
+          "height": 68
+        }
+      },
+      {
+        "text": "0,02",
+        "confidence": 0.9988063275814056,
+        "box": {
+          "x": 1483,
+          "y": 1282,
+          "width": 102,
+          "height": 66
+        }
+      }
+    ],
+    [
+      {
+        "text": "I?slicher Transferrinrezeptor 1,71-4,13",
+        "confidence": 0.9803181397609222,
+        "box": {
+          "x": 51,
+          "y": 1343,
+          "width": 766,
+          "height": 55
+        }
+      },
+      {
+        "text": "mg/",
+        "confidence": 0.9999693632125854,
+        "box": {
+          "x": 881,
+          "y": 1335,
+          "width": 115,
+          "height": 76
+        }
+      },
+      {
+        "text": "2,42",
+        "confidence": 0.9999663829803467,
+        "box": {
+          "x": 1247,
+          "y": 1329,
+          "width": 113,
+          "height": 76
+        }
+      }
+    ],
+    [
+      {
+        "text": "Befund validiert von:",
+        "confidence": 0.9986473577363151,
+        "box": {
+          "x": 57,
+          "y": 1399,
+          "width": 408,
+          "height": 49
+        }
+      },
+      {
+        "text": "Dr. Farz..",
+        "confidence": 0.9989965379238128,
+        "box": {
+          "x": 1200,
+          "y": 1386,
+          "width": 201,
+          "height": 57
+        }
+      }
+    ],
+    [
+      {
+        "text": "(*) Die Normwerte haben sich im dargestellten Zeitraum geändert.",
+        "confidence": 0.9974403837695718,
+        "box": {
+          "x": 154,
+          "y": 3228,
+          "width": 1524,
+          "height": 86
+        }
+      }
+    ]
+  ]
+}

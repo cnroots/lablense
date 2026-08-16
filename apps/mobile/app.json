@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "LabLens",
+    "slug": "lablens",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "lablens",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.lablens.mobile"
+    },
+    "android": {
+      "package": "com.lablens.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#EBF2F4"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Die App greift auf Fotos zu, um Laborbefunde zu erkennen. Die Bilder werden nicht gespeichert."
+        }
+      ]
+    ]
+  }
+}

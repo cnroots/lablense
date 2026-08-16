@@ -1,0 +1,380 @@
+{
+  "version": "1.0",
+  "source": "Curated laboratory unit catalog (UCUM-aligned codes + common display/OCR aliases)",
+  "units": [
+    {
+      "code": "%",
+      "names": [
+        "Prozent",
+        "percent",
+        "%"
+      ]
+    },
+    {
+      "code": "U/L",
+      "names": [
+        "IU/L",
+        "UI/L",
+        "U/l",
+        "arb U/L",
+        "U/I",
+        "U/A",
+        "UAI",
+        "UA",
+        "UI",
+        "UΛ",
+        "U/",
+        "u/l",
+        "IU/l",
+        "IU/A",
+        "IUA",
+        "IUI",
+        "VUI",
+        "W/"
+      ]
+    },
+    {
+      "code": "IU/L",
+      "names": [
+        "IU/l",
+        "U/l",
+        "IE/L"
+      ]
+    },
+    {
+      "code": "mU/L",
+      "names": [
+        "mIU/L",
+        "uIU/mL",
+        "uIU/ml",
+        "μIU/mL",
+        "µIU/mL",
+        "μU/mL",
+        "µU/mL",
+        "mU/l",
+        "mU/",
+        "mU/I",
+        "uiU/ml",
+        "uIU/l",
+        "μU/ml",
+        "µU/ml",
+        "ulU/ml",
+        "piU/ml",
+        "mIU/l"
+      ]
+    },
+    {
+      "code": "kIU/L",
+      "names": [
+        "kU/L",
+        "kU/l",
+        "kIU/l"
+      ]
+    },
+    {
+      "code": "IU/mL",
+      "names": [
+        "IU/ml",
+        "U/mL",
+        "U/ml"
+      ]
+    },
+    {
+      "code": "mU/mL",
+      "names": [
+        "mU/ml",
+        "uU/mL",
+        "uU/ml"
+      ]
+    },
+    {
+      "code": "µkat/L",
+      "names": [
+        "μkat/L",
+        "ukat/L",
+        "µkat/l",
+        "ukat/l"
+      ]
+    },
+    {
+      "code": "fL",
+      "names": [
+        "fl"
+      ]
+    },
+    {
+      "code": "pg",
+      "names": [
+        "Pikogramm",
+        "pg"
+      ]
+    },
+    {
+      "code": "pg/mL",
+      "names": [
+        "pg/ml",
+        "ng/L",
+        "ng/l"
+      ]
+    },
+    {
+      "code": "pg/dL",
+      "names": [
+        "pg/dl"
+      ]
+    },
+    {
+      "code": "ng/L",
+      "names": [
+        "ng/l"
+      ]
+    },
+    {
+      "code": "ng/mL",
+      "names": [
+        "ng/ml",
+        "mcg/mL",
+        "mcg/ml"
+      ]
+    },
+    {
+      "code": "ng/dL",
+      "names": [
+        "ng/dl",
+        "ng/di"
+      ]
+    },
+    {
+      "code": "µg/L",
+      "names": [
+        "μg/L",
+        "ug/L",
+        "ug/l",
+        "µg/l",
+        "mcg/L",
+        "mcg/l",
+        "μg/l"
+      ]
+    },
+    {
+      "code": "µg/dL",
+      "names": [
+        "μg/dL",
+        "ug/dL",
+        "ug/dl",
+        "mcg/dL",
+        "mcg/dl"
+      ]
+    },
+    {
+      "code": "µg/mL",
+      "names": [
+        "μg/mL",
+        "ug/mL",
+        "ug/ml",
+        "mcg/mL",
+        "mcg/ml"
+      ]
+    },
+    {
+      "code": "µg",
+      "names": [
+        "μg",
+        "ug",
+        "mcg",
+        "Mikrogramm"
+      ]
+    },
+    {
+      "code": "µg/24h",
+      "names": [
+        "μg/24h",
+        "ug/24h",
+        "µg/d"
+      ]
+    },
+    {
+      "code": "mg/L",
+      "names": [
+        "mg/l",
+        "mg/"
+      ]
+    },
+    {
+      "code": "mg/dL",
+      "names": [
+        "mg/dl",
+        "mg/100ml",
+        "mg/100 mL"
+      ]
+    },
+    {
+      "code": "mg/24h",
+      "names": [
+        "mg/24h",
+        "mg/24 h",
+        "mg/d"
+      ]
+    },
+    {
+      "code": "mg",
+      "names": [
+        "Milligramm"
+      ]
+    },
+    {
+      "code": "g/dL",
+      "names": [
+        "g/dl",
+        "g/cl",
+        "g/100ml"
+      ]
+    },
+    {
+      "code": "kg",
+      "names": [
+        "Kilogramm"
+      ]
+    },
+    {
+      "code": "mmol/L",
+      "names": [
+        "mmol/l",
+        "mval/l",
+        "mEq/L",
+        "mEq/l",
+        "mmol/"
+      ]
+    },
+    {
+      "code": "µmol/L",
+      "names": [
+        "μmol/L",
+        "umol/L",
+        "umol/l",
+        "µmol/l"
+      ]
+    },
+    {
+      "code": "nmol/L",
+      "names": [
+        "nmol/l"
+      ]
+    },
+    {
+      "code": "pmol/L",
+      "names": [
+        "pmol/l"
+      ]
+    },
+    {
+      "code": "mmol/mol",
+      "names": [
+        "mmol/mol"
+      ]
+    },
+    {
+      "code": "mOsm/kg",
+      "names": [
+        "mosm/kg"
+      ]
+    },
+    {
+      "code": "mL",
+      "names": [
+        "ml"
+      ]
+    },
+    {
+      "code": "mL/min",
+      "names": [
+        "ml/min",
+        "ml/min/1.73m2",
+        "ml/min/1.73m²",
+        "mL/min/1.73m2"
+      ]
+    },
+    {
+      "code": "s",
+      "names": [
+        "sec",
+        "Sekunde"
+      ]
+    },
+    {
+      "code": "min",
+      "names": [
+        "Minute"
+      ]
+    },
+    {
+      "code": "mm",
+      "names": [
+        "Millimeter",
+        "mm"
+      ]
+    },
+    {
+      "code": "cm",
+      "names": [
+        "Zentimeter"
+      ]
+    },
+    {
+      "code": "mmHg",
+      "names": [
+        "mm Hg",
+        "mmHG"
+      ]
+    },
+    {
+      "code": "kPa",
+      "names": [
+        "kpa"
+      ]
+    },
+    {
+      "code": "10*9/L",
+      "names": [
+        "G/l",
+        "G/L",
+        "G/",
+        "G/I",
+        "G//",
+        "G",
+        "Tsd/ul",
+        "Tsd/μl",
+        "Tsd/µl",
+        "x10e3/uL",
+        "x10e3/μL",
+        "x10e3/µL",
+        "x10³/μL",
+        "x103/μL"
+      ]
+    },
+    {
+      "code": "10*12/L",
+      "names": [
+        "T/l",
+        "T/L",
+        "TA",
+        "Mio/ul",
+        "Mio/μl",
+        "Mio/µl",
+        "x10e6/uL",
+        "x10e6/μL",
+        "x10e6/µL"
+      ]
+    },
+    {
+      "code": "10*3/uL",
+      "names": [
+        "10*3/µl",
+        "10*3/μl",
+        "10*3/ul",
+        "/uL",
+        "cells/uL"
+      ]
+    }
+  ]
+}

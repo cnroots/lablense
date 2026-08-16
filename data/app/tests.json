@@ -1,0 +1,4445 @@
+{
+  "version": "1.0",
+  "source": {
+    "name": "LabLens Bundled Reference Data",
+    "version": "1.0",
+    "url": "https://github.com/LabLens/LabLens"
+  },
+  "groups": [
+    {
+      "key": "muscle",
+      "name": "Muskeln"
+    },
+    {
+      "key": "pancreas",
+      "name": "Bauchspeicheldrüse"
+    },
+    {
+      "key": "thyroid",
+      "name": "Schilddrüse"
+    },
+    {
+      "key": "tumor-marker",
+      "name": "Tumormarker"
+    },
+    {
+      "key": "inflammation",
+      "name": "Entzündung"
+    },
+    {
+      "key": "electrolytes",
+      "name": "Elektrolyte"
+    },
+    {
+      "key": "metabolism",
+      "name": "Stoffwechsel"
+    },
+    {
+      "key": "blood-count",
+      "name": "Blutbild"
+    },
+    {
+      "key": "differential",
+      "name": "Differentialblutbild"
+    },
+    {
+      "key": "iron",
+      "name": "Eisenstoffwechsel"
+    },
+    {
+      "key": "vitamins",
+      "name": "Vitamine"
+    },
+    {
+      "key": "trace-elements",
+      "name": "Spurenelemente"
+    },
+    {
+      "key": "fatty-acids",
+      "name": "Fettsäuren"
+    },
+    {
+      "key": "liver",
+      "name": "Leber"
+    },
+    {
+      "key": "enzymes",
+      "name": "Enzyme"
+    },
+    {
+      "key": "heart",
+      "name": "Herz"
+    },
+    {
+      "key": "kidney",
+      "name": "Niere"
+    },
+    {
+      "key": "coagulation",
+      "name": "Gerinnung"
+    },
+    {
+      "key": "proteins",
+      "name": "Eiweiß"
+    },
+    {
+      "key": "lipids",
+      "name": "Blutfette"
+    }
+  ],
+  "tests": [
+    {
+      "key": "ck",
+      "displayName": "CK",
+      "group": "muscle",
+      "description": "Creatinkinase (Gesamt-CK)",
+      "names": [
+        {
+          "name": "Creatinkinase",
+          "type": "canonical"
+        },
+        {
+          "name": "CK",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Creatin-Kinase",
+          "type": "synonym"
+        },
+        {
+          "name": "Kreatinkinase",
+          "type": "synonym"
+        },
+        {
+          "name": "CPK",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "U/L",
+          "display": "U/L",
+          "aliases": [
+            "U/l",
+            "u/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "U/L",
+          "upper": {
+            "value": 170,
+            "operator": "<"
+          },
+          "conditions": [
+            {
+              "field": "sex",
+              "operator": "eq",
+              "value": "female"
+            }
+          ]
+        },
+        {
+          "type": "numeric",
+          "unit": "U/L",
+          "upper": {
+            "value": 190,
+            "operator": "<"
+          },
+          "conditions": [
+            {
+              "field": "sex",
+              "operator": "eq",
+              "value": "male"
+            }
+          ]
+        }
+      ],
+      "loinc": "2157-6"
+    },
+    {
+      "key": "lipase",
+      "displayName": "Lipase",
+      "group": "pancreas",
+      "description": "Pankreaslipase",
+      "names": [
+        {
+          "name": "Lipase",
+          "type": "canonical"
+        },
+        {
+          "name": "Pankreaslipase",
+          "type": "synonym"
+        },
+        {
+          "name": "Pancreaslipase",
+          "type": "synonym"
+        },
+        {
+          "name": "Triacylglycerid-Lipase",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "U/L",
+          "display": "U/L",
+          "aliases": [
+            "U/l",
+            "u/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "U/L",
+          "upper": {
+            "value": 60,
+            "operator": "<"
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "3040-3"
+    },
+    {
+      "key": "tsh",
+      "displayName": "TSH",
+      "group": "thyroid",
+      "description": "Thyreoidea-stimulierendes Hormon",
+      "names": [
+        {
+          "name": "Thyreotropin",
+          "type": "canonical"
+        },
+        {
+          "name": "TSH",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Thyrotropin",
+          "type": "synonym"
+        },
+        {
+          "name": "thyroid stimulating hormone",
+          "type": "synonym",
+          "language": "en"
+        },
+        {
+          "name": "Thyreoidea-stimulierendes Hormon",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mU/L",
+          "display": "mU/L",
+          "aliases": [
+            "mU/l",
+            "mIU/L",
+            "µIU/mL",
+            "uIU/mL"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mU/L",
+          "lower": {
+            "value": 0.27,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 4.2,
+            "operator": "<="
+          },
+          "conditions": []
+        },
+        {
+          "type": "numeric",
+          "unit": "mU/L",
+          "lower": {
+            "value": 0.1,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 2.5,
+            "operator": "<="
+          },
+          "conditions": [
+            {
+              "field": "pregnant",
+              "operator": "eq",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "loinc": "3016-3"
+    },
+    {
+      "key": "ft3",
+      "displayName": "fT3",
+      "group": "thyroid",
+      "description": "Freies Trijodthyronin",
+      "names": [
+        {
+          "name": "Freies Trijodthyronin",
+          "type": "canonical"
+        },
+        {
+          "name": "fT3",
+          "type": "abbreviation"
+        },
+        {
+          "name": "freies T3",
+          "type": "synonym"
+        },
+        {
+          "name": "Triiodthyronin",
+          "type": "synonym"
+        },
+        {
+          "name": "T3 frei",
+          "type": "synonym"
+        },
+        {
+          "name": "Trijodthyronin.frei",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "pmol/L",
+          "display": "pmol/L",
+          "aliases": [
+            "pmol/l"
+          ]
+        },
+        {
+          "ucum": "pg/mL",
+          "display": "pg/mL",
+          "aliases": [
+            "pg/ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "pmol/L",
+          "lower": {
+            "value": 3.1,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 6.8,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "3051-0"
+    },
+    {
+      "key": "ft4",
+      "displayName": "fT4",
+      "group": "thyroid",
+      "description": "Freies Thyroxin",
+      "names": [
+        {
+          "name": "Freies Thyroxin",
+          "type": "canonical"
+        },
+        {
+          "name": "fT4",
+          "type": "abbreviation"
+        },
+        {
+          "name": "freies T4",
+          "type": "synonym"
+        },
+        {
+          "name": "Thyroxin frei",
+          "type": "synonym"
+        },
+        {
+          "name": "Thyroxin.frei",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "pmol/L",
+          "display": "pmol/L",
+          "aliases": [
+            "pmol/l"
+          ]
+        },
+        {
+          "ucum": "ng/dL",
+          "display": "ng/dL",
+          "aliases": [
+            "ng/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "pmol/L",
+          "lower": {
+            "value": 12,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 22,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "3024-7"
+    },
+    {
+      "key": "s100",
+      "displayName": "S100",
+      "group": "tumor-marker",
+      "description": "S100-Protein",
+      "names": [
+        {
+          "name": "S100",
+          "type": "canonical"
+        },
+        {
+          "name": "S-100",
+          "type": "synonym"
+        },
+        {
+          "name": "S100-Protein",
+          "type": "synonym"
+        },
+        {
+          "name": "S100 Calcium-bindendes Protein B",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "µg/L",
+          "display": "µg/L",
+          "aliases": [
+            "µg/l",
+            "ug/L",
+            "ug/l"
+          ]
+        },
+        {
+          "ucum": "ng/mL",
+          "display": "ng/mL",
+          "aliases": [
+            "ng/ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "µg/L",
+          "upper": {
+            "value": 0.1,
+            "operator": "<"
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "47275-3"
+    },
+    {
+      "key": "cea",
+      "displayName": "CEA",
+      "group": "tumor-marker",
+      "description": "Carcinoembryonales Antigen",
+      "names": [
+        {
+          "name": "Carcinoembryonales Antigen",
+          "type": "canonical"
+        },
+        {
+          "name": "CEA",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Carcino-embryonales Antigen",
+          "type": "synonym"
+        },
+        {
+          "name": "Carcinoembryonic antigen",
+          "type": "synonym",
+          "language": "en"
+        },
+        {
+          "name": "Carcinoembryonales Ag",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        },
+        {
+          "name": "Karzinoembryonales",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "µg/L",
+          "display": "µg/L",
+          "aliases": [
+            "µg/l",
+            "ug/L",
+            "ug/l"
+          ]
+        },
+        {
+          "ucum": "ng/mL",
+          "display": "ng/mL",
+          "aliases": [
+            "ng/ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "µg/L",
+          "upper": {
+            "value": 5,
+            "operator": "<"
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "2039-6"
+    },
+    {
+      "key": "crp",
+      "displayName": "CRP",
+      "group": "inflammation",
+      "description": "C-reaktives Protein",
+      "names": [
+        {
+          "name": "C-reaktives Protein",
+          "type": "canonical"
+        },
+        {
+          "name": "CRP",
+          "type": "abbreviation"
+        },
+        {
+          "name": "C reaktives Protein",
+          "type": "synonym"
+        },
+        {
+          "name": "C-reactive protein",
+          "type": "synonym",
+          "language": "en"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/L",
+          "display": "mg/L",
+          "aliases": [
+            "mg/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/L",
+          "upper": {
+            "value": 5,
+            "operator": "<"
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "1988-5"
+    },
+    {
+      "key": "natrium",
+      "displayName": "Natrium",
+      "group": "electrolytes",
+      "description": "Natrium im Serum",
+      "names": [
+        {
+          "name": "Natrium",
+          "type": "canonical"
+        },
+        {
+          "name": "Na",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Sodium",
+          "type": "synonym",
+          "language": "en"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mmol/L",
+          "display": "mmol/L",
+          "aliases": [
+            "mmol/l",
+            "mval/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mmol/L",
+          "lower": {
+            "value": 135,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 145,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "2951-2"
+    },
+    {
+      "key": "kalium",
+      "displayName": "Kalium",
+      "group": "electrolytes",
+      "description": "Kalium im Serum",
+      "names": [
+        {
+          "name": "Kalium",
+          "type": "canonical"
+        },
+        {
+          "name": "K",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Potassium",
+          "type": "synonym",
+          "language": "en"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mmol/L",
+          "display": "mmol/L",
+          "aliases": [
+            "mmol/l",
+            "mval/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mmol/L",
+          "lower": {
+            "value": 3.5,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 5.1,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "2823-3"
+    },
+    {
+      "key": "calcium",
+      "displayName": "Calcium",
+      "group": "electrolytes",
+      "description": "Calcium im Serum",
+      "names": [
+        {
+          "name": "Calcium",
+          "type": "canonical"
+        },
+        {
+          "name": "Ca",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Kalzium",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mmol/L",
+          "display": "mmol/L",
+          "aliases": [
+            "mmol/l",
+            "mval/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mmol/L",
+          "lower": {
+            "value": 2.2,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 2.65,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "17861-6"
+    },
+    {
+      "key": "glukose",
+      "displayName": "Glukose",
+      "group": "metabolism",
+      "description": "Glukose im Serum/Plasma (nüchtern)",
+      "names": [
+        {
+          "name": "Glukose",
+          "type": "canonical"
+        },
+        {
+          "name": "Glucose",
+          "type": "synonym",
+          "language": "en"
+        },
+        {
+          "name": "Glc",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Blutzucker",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl",
+            "mg/100ml",
+            "mg per dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "lower": {
+            "value": 70,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 100,
+            "operator": "<="
+          },
+          "conditions": [
+            {
+              "field": "fasting",
+              "operator": "eq",
+              "value": true
+            }
+          ]
+        }
+      ],
+      "loinc": "2345-7"
+    },
+    {
+      "key": "leukozyten",
+      "displayName": "Leukozyten",
+      "group": "blood-count",
+      "description": "Leukozyten (weiße Blutkörperchen)",
+      "names": [
+        {
+          "name": "Leukozyten",
+          "type": "canonical"
+        },
+        {
+          "name": "Leukozytenzahl",
+          "type": "synonym"
+        },
+        {
+          "name": "WBC",
+          "type": "abbreviation"
+        },
+        {
+          "name": "White blood cells",
+          "type": "synonym",
+          "language": "en"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "10*9/L",
+          "display": "10⁹/L",
+          "aliases": [
+            "10^9/L",
+            "G/l",
+            "G/L",
+            "Gpt/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "10*9/L",
+          "lower": {
+            "value": 4,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 10,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "6690-2"
+    },
+    {
+      "key": "erythrozyten",
+      "displayName": "Erythrozyten",
+      "group": "blood-count",
+      "description": "Erythrozyten (rote Blutkörperchen)",
+      "names": [
+        {
+          "name": "Erythrozyten",
+          "type": "canonical"
+        },
+        {
+          "name": "Erythrozytenzahl",
+          "type": "synonym"
+        },
+        {
+          "name": "RBC",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Red blood cells",
+          "type": "synonym",
+          "language": "en"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "10*12/L",
+          "display": "10¹²/L",
+          "aliases": [
+            "10^12/L",
+            "T/l",
+            "T/L",
+            "Tpt/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "10*12/L",
+          "lower": {
+            "value": 4.1,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 5.1,
+            "operator": "<="
+          },
+          "conditions": [
+            {
+              "field": "sex",
+              "operator": "eq",
+              "value": "female"
+            }
+          ]
+        },
+        {
+          "type": "numeric",
+          "unit": "10*12/L",
+          "lower": {
+            "value": 4.5,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 5.9,
+            "operator": "<="
+          },
+          "conditions": [
+            {
+              "field": "sex",
+              "operator": "eq",
+              "value": "male"
+            }
+          ]
+        }
+      ],
+      "loinc": "789-8"
+    },
+    {
+      "key": "haemoglobin",
+      "displayName": "Hämoglobin",
+      "group": "blood-count",
+      "description": "Hämoglobin",
+      "names": [
+        {
+          "name": "Hämoglobin",
+          "type": "canonical"
+        },
+        {
+          "name": "Haemoglobin",
+          "type": "synonym"
+        },
+        {
+          "name": "Hb",
+          "type": "abbreviation"
+        },
+        {
+          "name": "HGB",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Hemoglobin",
+          "type": "synonym",
+          "language": "en"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "g/dL",
+          "display": "g/dL",
+          "aliases": [
+            "g/dl",
+            "g/100ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "g/dL",
+          "lower": {
+            "value": 12,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 16,
+            "operator": "<="
+          },
+          "conditions": [
+            {
+              "field": "sex",
+              "operator": "eq",
+              "value": "female"
+            }
+          ]
+        },
+        {
+          "type": "numeric",
+          "unit": "g/dL",
+          "lower": {
+            "value": 14,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 18,
+            "operator": "<="
+          },
+          "conditions": [
+            {
+              "field": "sex",
+              "operator": "eq",
+              "value": "male"
+            }
+          ]
+        }
+      ],
+      "loinc": "718-7"
+    },
+    {
+      "key": "haematokrit",
+      "displayName": "Hämatokrit",
+      "group": "blood-count",
+      "description": "Hämatokrit",
+      "names": [
+        {
+          "name": "Hämatokrit",
+          "type": "canonical"
+        },
+        {
+          "name": "Haematokrit",
+          "type": "synonym"
+        },
+        {
+          "name": "Hkt",
+          "type": "abbreviation"
+        },
+        {
+          "name": "HCT",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Hematocrit",
+          "type": "synonym",
+          "language": "en"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 36,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 48,
+            "operator": "<="
+          },
+          "conditions": [
+            {
+              "field": "sex",
+              "operator": "eq",
+              "value": "female"
+            }
+          ]
+        },
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 40,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 52,
+            "operator": "<="
+          },
+          "conditions": [
+            {
+              "field": "sex",
+              "operator": "eq",
+              "value": "male"
+            }
+          ]
+        }
+      ],
+      "loinc": "4544-3"
+    },
+    {
+      "key": "mcv",
+      "displayName": "MCV",
+      "group": "blood-count",
+      "description": "Mittleres korpuskuläres Volumen",
+      "names": [
+        {
+          "name": "Mittleres korpuskuläres Volumen",
+          "type": "canonical"
+        },
+        {
+          "name": "MCV",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Mittleres Zellvolumen",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "fL",
+          "display": "fL",
+          "aliases": [
+            "fl",
+            "µm³",
+            "um3"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "fL",
+          "lower": {
+            "value": 80,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 96,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "787-2"
+    },
+    {
+      "key": "mch",
+      "displayName": "MCH",
+      "group": "blood-count",
+      "description": "Mittlerer korpuskulärer Hämoglobingehalt",
+      "names": [
+        {
+          "name": "Mittlerer korpuskulärer Hämoglobingehalt",
+          "type": "canonical"
+        },
+        {
+          "name": "MCH",
+          "type": "abbreviation"
+        },
+        {
+          "name": "HBE",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "pg",
+          "display": "pg",
+          "aliases": [
+            "pg/Ery"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "pg",
+          "lower": {
+            "value": 28,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 33,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "785-6"
+    },
+    {
+      "key": "mchc",
+      "displayName": "MCHC",
+      "group": "blood-count",
+      "description": "Mittlere korpuskuläre Hämoglobinkonzentration",
+      "names": [
+        {
+          "name": "Mittlere korpuskuläre Hämoglobinkonzentration",
+          "type": "canonical"
+        },
+        {
+          "name": "MCHC",
+          "type": "abbreviation"
+        },
+        {
+          "name": "MCHC-Wert",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "g/dL",
+          "display": "g/dL",
+          "aliases": [
+            "g/dl",
+            "g/100ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "g/dL",
+          "lower": {
+            "value": 32,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 36,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "786-4"
+    },
+    {
+      "key": "thrombozyten",
+      "displayName": "Thrombozyten",
+      "group": "blood-count",
+      "description": "Thrombozyten (Blutplättchen)",
+      "names": [
+        {
+          "name": "Thrombozyten",
+          "type": "canonical"
+        },
+        {
+          "name": "Blutplättchen",
+          "type": "synonym"
+        },
+        {
+          "name": "PLT",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Platelets",
+          "type": "synonym",
+          "language": "en"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "10*9/L",
+          "display": "10⁹/L",
+          "aliases": [
+            "10^9/L",
+            "G/l",
+            "G/L",
+            "Gpt/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "10*9/L",
+          "lower": {
+            "value": 150,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 400,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "777-3"
+    },
+    {
+      "key": "neutrophile",
+      "displayName": "Neutrophile",
+      "group": "differential",
+      "description": "Neutrophile Granulozyten (relativ)",
+      "names": [
+        {
+          "name": "Neutrophile",
+          "type": "canonical"
+        },
+        {
+          "name": "Neutrophile Granulozyten",
+          "type": "synonym"
+        },
+        {
+          "name": "NEUT",
+          "type": "abbreviation"
+        },
+        {
+          "name": "NEU",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Neutrophile/Leukozyten",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 40,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 75,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "770-8"
+    },
+    {
+      "key": "lymphozyten",
+      "displayName": "Lymphozyten",
+      "group": "differential",
+      "description": "Lymphozyten (relativ)",
+      "names": [
+        {
+          "name": "Lymphozyten",
+          "type": "canonical"
+        },
+        {
+          "name": "Lymphocyten",
+          "type": "synonym"
+        },
+        {
+          "name": "LYMPH",
+          "type": "abbreviation"
+        },
+        {
+          "name": "LYM",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 20,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 45,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "731-0"
+    },
+    {
+      "key": "monozyten",
+      "displayName": "Monozyten",
+      "group": "differential",
+      "description": "Monozyten (relativ)",
+      "names": [
+        {
+          "name": "Monozyten",
+          "type": "canonical"
+        },
+        {
+          "name": "Monocyten",
+          "type": "synonym"
+        },
+        {
+          "name": "MONO",
+          "type": "abbreviation"
+        },
+        {
+          "name": "MON",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Monozyten/Leukozyten",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 2,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 10,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "5905-5"
+    },
+    {
+      "key": "eosinophile",
+      "displayName": "Eosinophile",
+      "group": "differential",
+      "description": "Eosinophile Granulozyten (relativ)",
+      "names": [
+        {
+          "name": "Eosinophile",
+          "type": "canonical"
+        },
+        {
+          "name": "Eosinophile Granulozyten",
+          "type": "synonym"
+        },
+        {
+          "name": "EO",
+          "type": "abbreviation"
+        },
+        {
+          "name": "EOS",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 1,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 6,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "711-2"
+    },
+    {
+      "key": "basophile",
+      "displayName": "Basophile",
+      "group": "differential",
+      "description": "Basophile Granulozyten (relativ)",
+      "names": [
+        {
+          "name": "Basophile",
+          "type": "canonical"
+        },
+        {
+          "name": "Basophile Granulozyten",
+          "type": "synonym"
+        },
+        {
+          "name": "BASO",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Basophile/Leukozyten",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 0,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 2,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "30180-4"
+    },
+    {
+      "key": "neutrophile-absolut",
+      "displayName": "Neutrophile absolut",
+      "group": "differential",
+      "description": "Neutrophile Granulozyten (absolut)",
+      "names": [
+        {
+          "name": "Neutrophile absolut",
+          "type": "canonical"
+        },
+        {
+          "name": "Neutrophile Granulozyten absolut",
+          "type": "synonym"
+        },
+        {
+          "name": "NEUT abs",
+          "type": "abbreviation"
+        },
+        {
+          "name": "NEU2",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Neutrophile",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "10*9/L",
+          "display": "10⁹/L",
+          "aliases": [
+            "10^9/L",
+            "G/l",
+            "G/L",
+            "Gpt/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "10*9/L",
+          "lower": {
+            "value": 2,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 7.5,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "751-8"
+    },
+    {
+      "key": "lymphozyten-absolut",
+      "displayName": "Lymphozyten absolut",
+      "group": "differential",
+      "description": "Lymphozyten (absolut)",
+      "names": [
+        {
+          "name": "Lymphozyten absolut",
+          "type": "canonical"
+        },
+        {
+          "name": "Lymphozytenzahl absolut",
+          "type": "synonym"
+        },
+        {
+          "name": "LYMPH abs",
+          "type": "abbreviation"
+        },
+        {
+          "name": "LYM2",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Lymphozyten",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "10*9/L",
+          "display": "10⁹/L",
+          "aliases": [
+            "10^9/L",
+            "G/l",
+            "G/L",
+            "Gpt/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "10*9/L",
+          "lower": {
+            "value": 1,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 4,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "26474-7"
+    },
+    {
+      "key": "monozyten-absolut",
+      "displayName": "Monozyten absolut",
+      "group": "differential",
+      "description": "Monozyten (absolut)",
+      "names": [
+        {
+          "name": "Monozyten absolut",
+          "type": "canonical"
+        },
+        {
+          "name": "Monozytenzahl absolut",
+          "type": "synonym"
+        },
+        {
+          "name": "MONO abs",
+          "type": "abbreviation"
+        },
+        {
+          "name": "MON2",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Monozyten",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "10*9/L",
+          "display": "10⁹/L",
+          "aliases": [
+            "10^9/L",
+            "G/l",
+            "G/L",
+            "Gpt/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "10*9/L",
+          "lower": {
+            "value": 0.2,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 0.8,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "26484-6"
+    },
+    {
+      "key": "eosinophile-absolut",
+      "displayName": "Eosinophile absolut",
+      "group": "differential",
+      "description": "Eosinophile Granulozyten (absolut)",
+      "names": [
+        {
+          "name": "Eosinophile absolut",
+          "type": "canonical"
+        },
+        {
+          "name": "Eosinophile Granulozyten absolut",
+          "type": "synonym"
+        },
+        {
+          "name": "EO abs",
+          "type": "abbreviation"
+        },
+        {
+          "name": "EOS2",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Eosinophile",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "10*9/L",
+          "display": "10⁹/L",
+          "aliases": [
+            "10^9/L",
+            "G/l",
+            "G/L",
+            "Gpt/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "10*9/L",
+          "lower": {
+            "value": 0,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 0.5,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "26449-9"
+    },
+    {
+      "key": "basophile-absolut",
+      "displayName": "Basophile absolut",
+      "group": "differential",
+      "description": "Basophile Granulozyten (absolut)",
+      "names": [
+        {
+          "name": "Basophile absolut",
+          "type": "canonical"
+        },
+        {
+          "name": "Basophile Granulozyten absolut",
+          "type": "synonym"
+        },
+        {
+          "name": "BASO abs",
+          "type": "abbreviation"
+        },
+        {
+          "name": "BASO2",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Basophile",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "10*9/L",
+          "display": "10⁹/L",
+          "aliases": [
+            "10^9/L",
+            "G/l",
+            "G/L",
+            "Gpt/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "10*9/L",
+          "lower": {
+            "value": 0,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 0.2,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "26444-0"
+    },
+    {
+      "key": "rdw",
+      "displayName": "RDW",
+      "group": "blood-count",
+      "description": "Erythrozytenverteilungsbreite",
+      "names": [
+        {
+          "name": "Erythrozytenverteilungsbreite",
+          "type": "canonical"
+        },
+        {
+          "name": "RDW",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Red cell distribution width",
+          "type": "synonym",
+          "language": "en"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 11.5,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 14.5,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "788-0"
+    },
+    {
+      "key": "mpv",
+      "displayName": "MPV",
+      "group": "blood-count",
+      "description": "Mittleres Thrombozytenvolumen",
+      "names": [
+        {
+          "name": "Mittleres Thrombozytenvolumen",
+          "type": "canonical"
+        },
+        {
+          "name": "MPV",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Mean platelet volume",
+          "type": "synonym",
+          "language": "en"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "fL",
+          "display": "fL",
+          "aliases": [
+            "fl",
+            "µm³",
+            "um3"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "fL",
+          "lower": {
+            "value": 7.5,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 12,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "32623-1"
+    },
+    {
+      "key": "ferritin",
+      "displayName": "Ferritin",
+      "group": "iron",
+      "description": "Ferritin (Eisenspeicher)",
+      "names": [
+        {
+          "name": "Ferritin",
+          "type": "canonical"
+        },
+        {
+          "name": "Ferr",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "µg/L",
+          "display": "µg/L",
+          "aliases": [
+            "µg/l",
+            "ug/L",
+            "ug/l"
+          ]
+        },
+        {
+          "ucum": "ng/mL",
+          "display": "ng/mL",
+          "aliases": [
+            "ng/ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "µg/L",
+          "lower": {
+            "value": 15,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 150,
+            "operator": "<="
+          },
+          "conditions": [
+            {
+              "field": "sex",
+              "operator": "eq",
+              "value": "female"
+            }
+          ]
+        },
+        {
+          "type": "numeric",
+          "unit": "µg/L",
+          "lower": {
+            "value": 30,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 400,
+            "operator": "<="
+          },
+          "conditions": [
+            {
+              "field": "sex",
+              "operator": "eq",
+              "value": "male"
+            }
+          ]
+        }
+      ],
+      "loinc": "2276-4"
+    },
+    {
+      "key": "vitamin-b12",
+      "displayName": "Vitamin B12",
+      "group": "vitamins",
+      "description": "Vitamin B12 (Cobalamin)",
+      "names": [
+        {
+          "name": "Vitamin B12",
+          "type": "canonical"
+        },
+        {
+          "name": "Vitamin B 12",
+          "type": "synonym"
+        },
+        {
+          "name": "Cobalamin",
+          "type": "synonym"
+        },
+        {
+          "name": "B12",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Cobalamine",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        },
+        {
+          "name": "Zyanokobalamin",
+          "type": "synonym",
+          "language": "de",
+          "source": "LOINC deDE"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "pg/mL",
+          "display": "pg/mL",
+          "aliases": [
+            "pg/ml",
+            "ng/L",
+            "ng/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "pg/mL",
+          "lower": {
+            "value": 200,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 900,
+            "operator": "<="
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "2132-9"
+    },
+    {
+      "key": "folsaeure",
+      "displayName": "Folsäure",
+      "group": "vitamins",
+      "description": "Folsäure (Folat)",
+      "names": [
+        {
+          "name": "Folsäure",
+          "type": "canonical"
+        },
+        {
+          "name": "Folsaeure",
+          "type": "synonym"
+        },
+        {
+          "name": "Folat",
+          "type": "synonym"
+        },
+        {
+          "name": "Folate",
+          "type": "synonym",
+          "language": "en"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "µg/L",
+          "display": "µg/L",
+          "aliases": [
+            "µg/l",
+            "ug/L",
+            "ug/l"
+          ]
+        },
+        {
+          "ucum": "ng/mL",
+          "display": "ng/mL",
+          "aliases": [
+            "ng/ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "µg/L",
+          "lower": {
+            "value": 4,
+            "operator": ">"
+          },
+          "conditions": []
+        }
+      ],
+      "loinc": "2284-8"
+    },
+    {
+      "key": "zink",
+      "displayName": "Zink",
+      "group": "trace-elements",
+      "loinc": "5763-8",
+      "names": [
+        {
+          "name": "Zink",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Zink im Serum",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Zn",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "µg/L",
+          "display": "µg/L",
+          "aliases": [
+            "µg/l",
+            "ug/L",
+            "ug/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "µg/L",
+          "lower": {
+            "value": 700,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 1200,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "vitamin-d3",
+      "displayName": "25-OH-Vitamin D",
+      "group": "vitamins",
+      "loinc": "62292-8",
+      "names": [
+        {
+          "name": "25-OH-Vitamin D",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Vitamin D3 (25-OH)",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "25-Hydroxy-Vitamin D",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Vitamin D",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Calcidiol",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "µg/L",
+          "display": "µg/L",
+          "aliases": [
+            "µg/l",
+            "ug/L",
+            "ug/l"
+          ]
+        },
+        {
+          "ucum": "ng/mL",
+          "display": "ng/mL",
+          "aliases": [
+            "ng/ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "µg/L",
+          "lower": {
+            "value": 20,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 50,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "thyreoglobulin-ak",
+      "displayName": "Thyreoglobulin-Antikörper",
+      "group": "thyroid",
+      "loinc": "8099-4",
+      "names": [
+        {
+          "name": "Thyreoglobulin-Antikörper",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "TAK",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Thyreoglobulin Ak",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Anti-Thyreoglobulin",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "IU/mL",
+          "display": "U/mL",
+          "aliases": [
+            "U/ml",
+            "IU/mL",
+            "IU/ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "IU/mL",
+          "upper": {
+            "value": 60,
+            "operator": "<"
+          }
+        }
+      ]
+    },
+    {
+      "key": "omega-3-index",
+      "displayName": "Omega-3-Index",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "Omega-3-Index",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Omega-3-Index (EPA+DHA)",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "dha",
+      "displayName": "DHA (Docosahexaensäure)",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "DHA",
+          "type": "canonical"
+        },
+        {
+          "name": "Docosahexaensäure",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Docosahexaensaure",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "epa",
+      "displayName": "EPA (Eicosapentaensäure)",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "EPA",
+          "type": "canonical"
+        },
+        {
+          "name": "Eicosapentaensäure",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Eicosapentaensaeure",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "arachidonsaeure",
+      "displayName": "Arachidonsäure (AA)",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "Arachidonsäure",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Arachidonsaeure",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "AA",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "alpha-linolensaeure",
+      "displayName": "Alpha-Linolensäure (ALA)",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "Alpha-Linolensäure",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Alpha-Linolensaeure",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "ALA",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "gamma-linolensaeure",
+      "displayName": "Gamma-Linolensäure (GLA)",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "Gamma-Linolensäure",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Gamma-Linolensaeure",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "GLA",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "dihomo-gamma-linolensaeure",
+      "displayName": "Dihomo-gamma-Linolensäure",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "Dihomo-gamma-Linolensäure",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Dihomo-gamma-Linolensaeure",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "DGLA",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "linolsaeure",
+      "displayName": "Linolsäure",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "Linolsäure",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Linolsaeure",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "docosatetraensaeure",
+      "displayName": "Docosatetraensäure (DTA)",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "Docosatetraensäure",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Docosatetraensaeure",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "DTA",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "docosapentaensaeure",
+      "displayName": "Docosapentaensäure (DPA)",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "Docosapentaensäure",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Docosapentaensaeure",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "DPA",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "aa-epa-quotient",
+      "displayName": "AA/EPA-Quotient",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "AA/EPA-Quotient",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "AA/EPA",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "oelsaeure",
+      "displayName": "Ölsäure",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "Ölsäure",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Olsäure",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Ölsaeure",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Oleic acid",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "tsh-rezeptor-ak",
+      "displayName": "TSH-Rezeptor-Antikörper",
+      "group": "thyroid",
+      "loinc": "5385-0",
+      "names": [
+        {
+          "name": "TSH-Rezeptor-Antikörper",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "TSH-Rezeptor-AK",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "TSH-Rezeptor Ak",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "TRAK",
+          "type": "abbreviation"
+        },
+        {
+          "name": "TRAb",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "U/L",
+          "display": "U/L",
+          "aliases": [
+            "U/l",
+            "IU/L",
+            "IU/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "U/L",
+          "upper": {
+            "value": 1.75,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "got",
+      "displayName": "GOT (ASAT)",
+      "group": "liver",
+      "loinc": "1920-8",
+      "names": [
+        {
+          "name": "GOT",
+          "type": "abbreviation"
+        },
+        {
+          "name": "ASAT",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Aspartat-Aminotransferase",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Glutamat-Oxalacetat-Transaminase",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "U/L",
+          "display": "U/L",
+          "aliases": [
+            "U/l",
+            "UI",
+            "UAI"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "U/L",
+          "upper": {
+            "value": 35,
+            "operator": "<"
+          }
+        }
+      ]
+    },
+    {
+      "key": "gpt",
+      "displayName": "GPT (ALAT)",
+      "group": "liver",
+      "loinc": "1742-6",
+      "names": [
+        {
+          "name": "GPT",
+          "type": "abbreviation"
+        },
+        {
+          "name": "ALAT",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Alanin-Aminotransferase",
+          "type": "canonical",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "U/L",
+          "display": "U/L",
+          "aliases": [
+            "U/l",
+            "UI"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "U/L",
+          "upper": {
+            "value": 35,
+            "operator": "<"
+          }
+        }
+      ]
+    },
+    {
+      "key": "gamma-gt",
+      "displayName": "Gamma-GT",
+      "group": "liver",
+      "loinc": "2324-2",
+      "names": [
+        {
+          "name": "Gamma-GT",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "GGT",
+          "type": "abbreviation"
+        },
+        {
+          "name": "Gamma-Glutamyltransferase",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "γ-GT",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "U/L",
+          "display": "U/L",
+          "aliases": [
+            "U/l",
+            "UI"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "U/L",
+          "upper": {
+            "value": 40,
+            "operator": "<"
+          }
+        }
+      ]
+    },
+    {
+      "key": "bilirubin-gesamt",
+      "displayName": "Bilirubin gesamt",
+      "group": "liver",
+      "loinc": "1975-2",
+      "names": [
+        {
+          "name": "Bilirubin gesamt",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Gesamt-Bilirubin",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "upper": {
+            "value": 1.2,
+            "operator": "<"
+          }
+        }
+      ]
+    },
+    {
+      "key": "bilirubin-direkt",
+      "displayName": "Bilirubin direkt",
+      "group": "liver",
+      "loinc": "1968-7",
+      "names": [
+        {
+          "name": "Bilirubin direkt",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Direktes Bilirubin",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Bilirubin konjugiert",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "upper": {
+            "value": 0.3,
+            "operator": "<"
+          }
+        }
+      ]
+    },
+    {
+      "key": "bilirubin-indirekt",
+      "displayName": "Bilirubin indirekt",
+      "group": "liver",
+      "names": [
+        {
+          "name": "Bilirubin indirekt",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Indirektes Bilirubin",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "upper": {
+            "value": 0.9,
+            "operator": "<"
+          }
+        }
+      ]
+    },
+    {
+      "key": "ldh",
+      "displayName": "LDH",
+      "group": "enzymes",
+      "loinc": "2532-0",
+      "names": [
+        {
+          "name": "LDH",
+          "type": "canonical"
+        },
+        {
+          "name": "Laktatdehydrogenase",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Lactatdehydrogenase",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "U/L",
+          "display": "U/L",
+          "aliases": [
+            "U/l",
+            "UI"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "U/L",
+          "upper": {
+            "value": 250,
+            "operator": "<"
+          }
+        }
+      ]
+    },
+    {
+      "key": "alk-phosphatase",
+      "displayName": "Alkalische Phosphatase",
+      "group": "enzymes",
+      "loinc": "6768-6",
+      "names": [
+        {
+          "name": "Alkalische Phosphatase",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Alk. Phosphatase",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "AP",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "U/L",
+          "display": "U/L",
+          "aliases": [
+            "U/l",
+            "UI"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "U/L",
+          "lower": {
+            "value": 40,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 130,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "nt-pro-bnp",
+      "displayName": "NT-proBNP",
+      "group": "heart",
+      "loinc": "33762-6",
+      "names": [
+        {
+          "name": "NT-proBNP",
+          "type": "canonical"
+        },
+        {
+          "name": "NT-pro-BNP",
+          "type": "synonym"
+        },
+        {
+          "name": "N-terminales proBNP",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "pg/mL",
+          "display": "pg/mL",
+          "aliases": [
+            "pg/ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "pg/mL",
+          "upper": {
+            "value": 125,
+            "operator": "<"
+          }
+        }
+      ]
+    },
+    {
+      "key": "harnsaeure",
+      "displayName": "Harnsäure",
+      "group": "kidney",
+      "loinc": "3084-7",
+      "names": [
+        {
+          "name": "Harnsäure",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Harnsaeure",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Urat",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "lower": {
+            "value": 2.4,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 7,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "harnstoff",
+      "displayName": "Harnstoff",
+      "group": "kidney",
+      "loinc": "3094-6",
+      "names": [
+        {
+          "name": "Harnstoff",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Urea",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "lower": {
+            "value": 17,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 43,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "kreatinin",
+      "displayName": "Kreatinin",
+      "group": "kidney",
+      "loinc": "2160-0",
+      "names": [
+        {
+          "name": "Kreatinin",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Creatinin",
+          "type": "synonym"
+        },
+        {
+          "name": "Kreatinin enzymatisch",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "lower": {
+            "value": 0.5,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 1.2,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "egfr",
+      "displayName": "eGFR (CKD-EPI)",
+      "group": "kidney",
+      "loinc": "62238-1",
+      "names": [
+        {
+          "name": "eGFR",
+          "type": "canonical"
+        },
+        {
+          "name": "eGFR (CKD-EPI)",
+          "type": "synonym"
+        },
+        {
+          "name": "GFR",
+          "type": "synonym"
+        },
+        {
+          "name": "glomeruläre Filtrationsrate",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mL/min",
+          "display": "mL/min/1.73m²",
+          "aliases": [
+            "ml/min"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mL/min",
+          "lower": {
+            "value": 60,
+            "operator": ">"
+          }
+        }
+      ]
+    },
+    {
+      "key": "gamma-globulin",
+      "displayName": "Gamma-Globulin",
+      "group": "proteins",
+      "loinc": "1394-6",
+      "names": [
+        {
+          "name": "Gamma-Globulin",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "γ-Globulin",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "beta-2-mikroglobulin",
+      "displayName": "Beta-2-Mikroglobulin",
+      "group": "proteins",
+      "loinc": "1952-1",
+      "names": [
+        {
+          "name": "Beta-2-Mikroglobulin",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "β2-Mikroglobulin",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/L",
+          "display": "mg/L",
+          "aliases": [
+            "mg/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/L",
+          "lower": {
+            "value": 0.8,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 2.2,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "gesamteiweiss",
+      "displayName": "Gesamteiweiß",
+      "group": "proteins",
+      "loinc": "2885-2",
+      "names": [
+        {
+          "name": "Gesamteiweiß",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Gesamteiweiss",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Gesamtprotein",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Total Protein",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "g/L",
+          "display": "g/L",
+          "aliases": [
+            "g/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "g/L",
+          "lower": {
+            "value": 66,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 83,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "igg",
+      "displayName": "Immunglobulin G (IgG)",
+      "group": "proteins",
+      "loinc": "2465-3",
+      "names": [
+        {
+          "name": "Immunglobulin G",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Immunglobulin G (IgG)",
+          "type": "synonym"
+        },
+        {
+          "name": "IgG",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "g/L",
+          "display": "g/L",
+          "aliases": [
+            "g/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "g/L",
+          "lower": {
+            "value": 7,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 16,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "iga",
+      "displayName": "Immunglobulin A (IgA)",
+      "group": "proteins",
+      "loinc": "2458-8",
+      "names": [
+        {
+          "name": "Immunglobulin A",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Immunglobulin A (IgA)",
+          "type": "synonym"
+        },
+        {
+          "name": "IgA",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "g/L",
+          "display": "g/L",
+          "aliases": [
+            "g/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "g/L",
+          "lower": {
+            "value": 0.7,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 4,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "igm",
+      "displayName": "Immunglobulin M (IgM)",
+      "group": "proteins",
+      "loinc": "2472-9",
+      "names": [
+        {
+          "name": "Immunglobulin M",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Immunglobulin M (IgM)",
+          "type": "synonym"
+        },
+        {
+          "name": "IgM",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "g/L",
+          "display": "g/L",
+          "aliases": [
+            "g/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "g/L",
+          "lower": {
+            "value": 0.4,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 2.3,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "haptoglobin",
+      "displayName": "Haptoglobin",
+      "group": "proteins",
+      "loinc": "4542-7",
+      "names": [
+        {
+          "name": "Haptoglobin",
+          "type": "canonical",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "g/L",
+          "display": "g/L",
+          "aliases": [
+            "g/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "g/L",
+          "lower": {
+            "value": 0.3,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 2,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "freie-kappa-ketten",
+      "displayName": "Freie Kappa-Leichtketten",
+      "group": "proteins",
+      "loinc": "36916-4",
+      "names": [
+        {
+          "name": "Freie Kappa-Leichtketten",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Freie Kappa-Ketten",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Kappa-Leichtketten",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/L",
+          "display": "mg/L",
+          "aliases": [
+            "mg/l"
+          ]
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "freie-lambda-ketten",
+      "displayName": "Freie Lambda-Leichtketten",
+      "group": "proteins",
+      "loinc": "36915-6",
+      "names": [
+        {
+          "name": "Freie Lambda-Leichtketten",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Freie Lambda-Ketten",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Lambda-Leichtketten",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/L",
+          "display": "mg/L",
+          "aliases": [
+            "mg/l"
+          ]
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "quick",
+      "displayName": "Quick",
+      "group": "coagulation",
+      "loinc": "5959-8",
+      "names": [
+        {
+          "name": "Quick",
+          "type": "canonical"
+        },
+        {
+          "name": "Thromboplastinzeit",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "TPZ",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 70,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 120,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "inr",
+      "displayName": "INR",
+      "group": "coagulation",
+      "loinc": "34714-6",
+      "names": [
+        {
+          "name": "INR",
+          "type": "canonical"
+        },
+        {
+          "name": "International Normalized Ratio",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "ratio",
+          "display": "Ratio",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "ratio",
+          "lower": {
+            "value": 0.9,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 1.1,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "aptt",
+      "displayName": "aPTT",
+      "group": "coagulation",
+      "loinc": "3173-2",
+      "names": [
+        {
+          "name": "aPTT",
+          "type": "canonical"
+        },
+        {
+          "name": "aktivierte partielle Thromboplastinzeit",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "PTT",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "s",
+          "display": "s",
+          "aliases": [
+            "sec",
+            "Sekunde"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "s",
+          "lower": {
+            "value": 26,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 36,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "fibrinogen",
+      "displayName": "Fibrinogen",
+      "group": "coagulation",
+      "loinc": "3255-7",
+      "names": [
+        {
+          "name": "Fibrinogen",
+          "type": "canonical",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "lower": {
+            "value": 180,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 350,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "plasminogen",
+      "displayName": "Plasminogen",
+      "group": "coagulation",
+      "loinc": "46542-5",
+      "names": [
+        {
+          "name": "Plasminogen",
+          "type": "canonical",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 75,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 140,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "thrombinzeit",
+      "displayName": "Thrombinzeit",
+      "group": "coagulation",
+      "loinc": "3243-3",
+      "names": [
+        {
+          "name": "Thrombinzeit",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "TZ",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "s",
+          "display": "s",
+          "aliases": [
+            "sec",
+            "Sekunde"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "s",
+          "upper": {
+            "value": 21,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "antithrombin",
+      "displayName": "Antithrombin III",
+      "group": "coagulation",
+      "loinc": "3174-0",
+      "names": [
+        {
+          "name": "Antithrombin III",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Antithrombin",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "AT III",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 80,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 120,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "d-dimer",
+      "displayName": "D-Dimer",
+      "group": "coagulation",
+      "loinc": "48065-5",
+      "names": [
+        {
+          "name": "D-Dimer",
+          "type": "canonical"
+        },
+        {
+          "name": "D-Dimer (FEU)",
+          "type": "synonym"
+        },
+        {
+          "name": "D-Dimere",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "ng/mL",
+          "display": "ng/mL",
+          "aliases": [
+            "ng/ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "ng/mL",
+          "upper": {
+            "value": 500,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "eisen",
+      "displayName": "Eisen",
+      "group": "iron",
+      "loinc": "2498-4",
+      "names": [
+        {
+          "name": "Eisen",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Serumeisen",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Fe",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "µg/dL",
+          "display": "µg/dL",
+          "aliases": [
+            "ug/dL",
+            "µg/dl",
+            "ug/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "µg/dL",
+          "lower": {
+            "value": 60,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 180,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "transferrin",
+      "displayName": "Transferrin",
+      "group": "iron",
+      "loinc": "3034-2",
+      "names": [
+        {
+          "name": "Transferrin",
+          "type": "canonical",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "lower": {
+            "value": 200,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 360,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "transferrinsaettigung",
+      "displayName": "Transferrinsättigung",
+      "group": "iron",
+      "loinc": "2502-3",
+      "names": [
+        {
+          "name": "Transferrinsättigung",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Transferrin-Sättigung",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Transferrinsaettigung",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Transferrin-Saettigung",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "%",
+          "display": "%",
+          "aliases": [
+            "Prozent"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "%",
+          "lower": {
+            "value": 16,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 45,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "loeslicher-transferrinrezeptor",
+      "displayName": "Löslicher Transferrin-Rezeptor",
+      "group": "iron",
+      "loinc": "49628-1",
+      "names": [
+        {
+          "name": "Löslicher Transferrin-Rezeptor",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Löslicher Transferrinrezeptor",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Transferrinrezeptor",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "sTfR",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/L",
+          "display": "mg/L",
+          "aliases": [
+            "mg/l"
+          ]
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "tpo-ak",
+      "displayName": "TPO-Antikörper",
+      "group": "thyroid",
+      "loinc": "5351-2",
+      "names": [
+        {
+          "name": "TPO-Antikörper",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "TPO-AK",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Anti-TPO",
+          "type": "synonym"
+        },
+        {
+          "name": "TPO-AK LIA",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "IU/mL",
+          "display": "U/mL",
+          "aliases": [
+            "U/ml",
+            "IU/mL",
+            "IU/ml"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "IU/mL",
+          "upper": {
+            "value": 34,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "omega-6-omega-3-quotient",
+      "displayName": "Omega-6/Omega-3-Quotient",
+      "group": "fatty-acids",
+      "names": [
+        {
+          "name": "Omega-6/Omega-3-Quotient",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Omega-6-/Omega-3-Quotient",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "ratio",
+          "display": "Ratio",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "triglyceride",
+      "displayName": "Triglyceride",
+      "group": "lipids",
+      "loinc": "2571-8",
+      "names": [
+        {
+          "name": "Triglyceride",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Triglyceride",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "upper": {
+            "value": 150,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "cholesterin",
+      "displayName": "Cholesterin",
+      "group": "lipids",
+      "loinc": "2093-3",
+      "names": [
+        {
+          "name": "Cholesterin",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Gesamtcholesterin",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Gesamt-Cholesterin",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "upper": {
+            "value": 200,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "hdl-cholesterin",
+      "displayName": "HDL-Cholesterin",
+      "group": "lipids",
+      "loinc": "2085-9",
+      "names": [
+        {
+          "name": "HDL-Cholesterin",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "HDL-gebundenes Cholesterin",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "HDL-geb. Cholesterin",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "HDL",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "lower": {
+            "value": 40,
+            "operator": ">"
+          }
+        }
+      ]
+    },
+    {
+      "key": "ldl-cholesterin",
+      "displayName": "LDL-Cholesterin",
+      "group": "lipids",
+      "loinc": "13457-7",
+      "names": [
+        {
+          "name": "LDL-Cholesterin",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "LDL-gebundenes Cholesterin",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "LDL-geb. Cholesterin",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "LDL",
+          "type": "abbreviation"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "upper": {
+            "value": 130,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "non-hdl-cholesterin",
+      "displayName": "Non-HDL-Cholesterin",
+      "group": "lipids",
+      "loinc": "43396-1",
+      "names": [
+        {
+          "name": "Non-HDL-Cholesterin",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Non-HDL",
+          "type": "synonym"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mg/dL",
+          "display": "mg/dL",
+          "aliases": [
+            "mg/dl"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mg/dL",
+          "upper": {
+            "value": 160,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "bks",
+      "displayName": "Blutsenkungsgeschwindigkeit",
+      "group": "inflammation",
+      "loinc": "4537-7",
+      "names": [
+        {
+          "name": "Blutsenkungsgeschwindigkeit",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Blutkörperchensenkungsgeschwindigkeit",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "BKS",
+          "type": "abbreviation"
+        },
+        {
+          "name": "BSG",
+          "type": "abbreviation"
+        },
+        {
+          "name": "BKS 1. Stunde",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "BKS: 1. Stunde",
+          "type": "synonym",
+          "language": "de"
+        },
+        {
+          "name": "Blutsenkung",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "mm",
+          "display": "mm",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "mm",
+          "upper": {
+            "value": 15,
+            "operator": "<="
+          }
+        }
+      ]
+    },
+    {
+      "key": "kappa-lambda-quotient",
+      "displayName": "Kappa/Lambda-Quotient",
+      "group": "proteins",
+      "names": [
+        {
+          "name": "Kappa/Lambda-Quotient",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Kappa-Lambda-Quotient",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "ratio",
+          "display": "Ratio",
+          "aliases": []
+        }
+      ],
+      "referenceRanges": []
+    },
+    {
+      "key": "albumin",
+      "displayName": "Albumin",
+      "group": "proteins",
+      "loinc": "1751-7",
+      "names": [
+        {
+          "name": "Albumin",
+          "type": "canonical",
+          "language": "de"
+        },
+        {
+          "name": "Albumin (Elektrophorese)",
+          "type": "synonym",
+          "language": "de"
+        }
+      ],
+      "units": [
+        {
+          "ucum": "g/L",
+          "display": "g/L",
+          "aliases": [
+            "g/l"
+          ]
+        }
+      ],
+      "referenceRanges": [
+        {
+          "type": "numeric",
+          "unit": "g/L",
+          "lower": {
+            "value": 35,
+            "operator": ">="
+          },
+          "upper": {
+            "value": 52,
+            "operator": "<="
+          }
+        }
+      ]
+    }
+  ]
+}

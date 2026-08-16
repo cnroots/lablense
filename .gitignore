@@ -1,0 +1,27 @@
+node_modules/
+dist/
+build/
+coverage/
+*.log
+.DS_Store
+
+# local database files
+*.sqlite
+*.sqlite3
+*.db
+data/*.db
+data/**/*.db
+
+# third-party LOINC/UCUM distributions (copyrighted — do not commit)
+data/loinc/*.csv
+data/loinc/*.txt
+data/loinc/*.zip
+data/ucum/*.xml
+data/ucum/*.json
+
+# env
+.env
+.env.local
+
+# OS
+Thumbs.db

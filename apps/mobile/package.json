@@ -1,0 +1,50 @@
+{
+  "name": "@lablens/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "EXPO_USE_COMMUNITY_AUTOLINKING=1 expo run:android",
+    "ios": "EXPO_USE_COMMUNITY_AUTOLINKING=1 expo run:ios",
+    "device": "bash scripts/run-on-device.sh",
+    "prebuild": "EXPO_USE_COMMUNITY_AUTOLINKING=1 expo prebuild",
+    "typecheck": "tsc --noEmit",
+    "export": "expo export"
+  },
+  "dependencies": {
+    "@lablens/core": "0.1.0",
+    "@lablens/data": "0.1.0",
+    "@lablens/ocr": "0.1.0",
+    "@react-navigation/bottom-tabs": "^7.18.16",
+    "@react-navigation/native": "^7.3.16",
+    "@react-navigation/native-stack": "^7.18.8",
+    "@shopify/react-native-skia": "2.6.2",
+    "drizzle-orm": "^0.45.0",
+    "expo": "~56.0.4",
+    "expo-asset": "~56.0.14",
+    "expo-dev-client": "~56.0.15",
+    "expo-file-system": "~56.0.7",
+    "expo-image-picker": "~56.0.13",
+    "expo-sqlite": "~56.0.4",
+    "expo-status-bar": "~56.0.4",
+    "onnxruntime-react-native": "^1.24.0",
+    "ppu-paddle-ocr": "^6.4.0",
+    "react": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-gesture-handler": "~2.31.1",
+    "react-native-reanimated": "4.3.1",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "4.25.2",
+    "react-native-svg": "15.15.4",
+    "react-native-worklets": "0.8.3",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@react-native-community/cli": "^20.1.3",
+    "@types/react": "~19.2.0",
+    "babel-preset-expo": "~56.0.19",
+    "typescript": "^5.7.0"
+  }
+}

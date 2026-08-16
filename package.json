@@ -1,0 +1,35 @@
+{
+  "name": "lablens",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "LabLens - offline-first laboratory values platform",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "postinstall": "patch-package",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "db:prefill": "tsx scripts/prefill.ts",
+    "loinc:import": "tsx scripts/loinc-import.ts",
+    "ocr:benchmark": "tsx scripts/ocr-benchmark.ts",
+    "api:dev": "tsx apps/api/src/server.ts",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24.0.0",
+    "onnxruntime-node": "^1.23.2",
+    "patch-package": "^8.0.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.0.0"
+  },
+  "dependencies": {
+    "jest": "^30.4.2"
+  }
+}
