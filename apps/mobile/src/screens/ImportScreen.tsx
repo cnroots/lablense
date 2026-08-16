@@ -64,7 +64,14 @@ export function ImportScreen() {
     setFileName(name);
     setProgress({ phase: "loading-model" });
     try {
-      const bytes = await new File(uri).bytes();
+      let bytes: Uint8Array;
+      try {
+        bytes = await new File(uri).bytes();
+      } catch (e) {
+        throw new Error(
+          "[IMAGEREAD] " + (e instanceof Error ? e.message : String(e))
+        );
+      }
       const extracted = await backend.ocr.recognize(
         { kind: "image", data: bytes, mimeType: "image/jpeg" },
         (p) => setProgress(p)

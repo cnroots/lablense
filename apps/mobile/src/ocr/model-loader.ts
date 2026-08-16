@@ -9,10 +9,22 @@ export interface PaddleMobileModel {
 
 async function assetToBytes(moduleId: number): Promise<Uint8Array> {
   const asset = Asset.fromModule(moduleId);
+  console.log("[OCRDEBUG] model-loader: asset", asset.name, "uri=", asset.uri, "localUri=", asset.localUri);
   await asset.downloadAsync();
+  console.log("[OCRDEBUG] model-loader: after download localUri=", asset.localUri);
   const uri = asset.localUri ?? asset.uri;
   const file = new File(uri);
-  return file.bytes();
+  console.log("[OCRDEBUG] model-loader: reading file.bytes uri=", uri);
+  let bytes: Uint8Array;
+  try {
+    bytes = await file.bytes();
+  } catch (e) {
+    throw new Error(
+      "[MODELREAD] " + (e instanceof Error ? e.message : String(e))
+    );
+  }
+  console.log("[OCRDEBUG] model-loader: bytes OK len=", bytes.byteLength);
+  return bytes;
 }
 
 /**
