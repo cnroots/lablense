@@ -24,6 +24,27 @@ const importer = new LoincImporter(db, transactions);
 await importer.import({ sourcePath: "./data/loinc/Loinc.csv", version: "2.82" });
 ```
 
+## Bundled blood-value catalog
+
+The mobile app ships a reduced, blood-related subset of LOINC (rows whose
+`SYSTEM` is a blood matrix: Bld, Ser, Plas, RBC, WBC, PPP, ...) together with a
+**default metric** (primary UCUM unit) per entry. Build it from an official
+distribution with:
+
+```bash
+npm run loinc:blood
+```
+
+This reads `data/loinc/Loinc.csv` + `data/loinc/LoincTableCore.csv` and writes:
+
+- `data/app/loinc-blood.json` — canonical build artifact
+- `apps/mobile/src/loinc-data.json` — bundled copy imported by the app
+
+The app imports this catalog into the on-device `loinc` table on first launch
+(`LoincJsonImporter`, gated on the `LOINC.BLOOD` `data_import` record). The
+default metric units are registered as `unit` rows so OCR-detected and
+manually corrected metrics can be resolved offline.
+
 ## License / attribution
 
 LOINC is copyright Regenstrief Institute, Inc. and the LOINC Committee. LOINC

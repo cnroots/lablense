@@ -20,6 +20,7 @@ export interface AnalyteDto {
   loinc: {
     code: string;
     displayName?: string;
+    defaultUnit?: string;
   }[];
   units: { unitId: string }[];
 }
@@ -38,7 +39,8 @@ export function toAnalyteDto(analyte: Analyte): AnalyteDto {
     })),
     loinc: analyte.loinc.map((l) => ({
       code: l.code,
-      displayName: l.displayName
+      displayName: l.displayName,
+      defaultUnit: l.defaultUnit
     })),
     units: analyte.units
   };

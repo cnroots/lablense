@@ -15,7 +15,8 @@ import * as ImagePicker from "expo-image-picker";
 import { File } from "expo-file-system";
 import type {
   ConfirmedLabValue,
-  ImportCandidateStatus
+  ImportCandidateStatus,
+  Unit
 } from "@lablens/core";
 import { colors, radius, spacing, typography } from "../theme/theme";
 import { strings } from "../i18n/de";
@@ -48,6 +49,7 @@ export function ImportScreen() {
   const [batchDate, setBatchDate] = useState(todayIso());
   const [progress, setProgress] = useState<OcrProgress | null>(null);
   const [pickerRowId, setPickerRowId] = useState<string | null>(null);
+  const [unitPickerRowId, setUnitPickerRowId] = useState<string | null>(null);
   const [showUnassigned, setShowUnassigned] = useState(false);
 
   const analytes = useMemo(
@@ -153,6 +155,34 @@ export function ImportScreen() {
     });
     setPickerRowId(null);
   };
+
+  const assignUnit = (unitId: string | null) => {
+    if (!unitPickerRowId) return;
+    const unit = unitId ? data?.unitsById.get(unitId) : undefined;
+    updateRow(unitPickerRowId, {
+      unitId: unit?.id ?? null,
+      unitLabel: unit?.displayName ?? ""
+    });
+    setUnitPickerRowId(null);
+  };
+
+  const pickerAnalyte = unitPickerRowId
+    ? rows.find((r) => r.id === unitPickerRowId)
+    : null;
+  const pickerAnalyteRecord = pickerAnalyte?.analyteId
+    ? analytes.find((a) => a.id === pickerAnalyte.analyteId)
+    : null;
+
+  const pickerUnits = useMemo(() => {
+    const all = [...(data?.unitsById.values() ?? [])];
+    if (!pickerAnalyteRecord) return all;
+    const ids = new Set(pickerAnalyteRecord.units.map((u) => u.unitId));
+    const compatible = [...ids]
+      .map((id) => data?.unitsById.get(id))
+      .filter((u): u is NonNullable<typeof u> => !!u)
+      .sort((a, b) => a.displayName.localeCompare(b.displayName, "de"));
+    return compatible.length > 0 ? compatible : all;
+  }, [pickerAnalyteRecord, data]);
 
   const commit = async () => {
     if (!activeUser) return;
@@ -276,6 +306,7 @@ export function ImportScreen() {
                 onChangeValue={(v) => updateRow(row.id, { value: v })}
                 onChangeDate={(d) => updateRow(row.id, { date: d })}
                 onPickAnalyte={() => setPickerRowId(row.id)}
+                onPickUnit={() => setUnitPickerRowId(row.id)}
               />
             ))}
 
@@ -309,6 +340,7 @@ export function ImportScreen() {
                       onChangeValue={(v) => updateRow(row.id, { value: v })}
                       onChangeDate={(d) => updateRow(row.id, { date: d })}
                       onPickAnalyte={() => setPickerRowId(row.id)}
+                      onPickUnit={() => setUnitPickerRowId(row.id)}
                     />
                   ))}
               </View>
@@ -334,6 +366,14 @@ export function ImportScreen() {
         analytes={analytes}
         onSelect={assignAnalyte}
         onClose={() => setPickerRowId(null)}
+      />
+
+      <UnitPickerModal
+        visible={unitPickerRowId !== null}
+        units={pickerUnits}
+        selectedUnitId={pickerAnalyte?.unitId ?? null}
+        onSelect={assignUnit}
+        onClose={() => setUnitPickerRowId(null)}
       />
     </ScrollView>
   );
@@ -391,13 +431,15 @@ function ReviewRowView({
   onInclude,
   onChangeValue,
   onChangeDate,
-  onPickAnalyte
+  onPickAnalyte,
+  onPickUnit
 }: {
   row: ReviewRow;
   onInclude: () => void;
   onChangeValue: (v: string) => void;
   onChangeDate: (d: string) => void;
   onPickAnalyte: () => void;
+  onPickUnit: () => void;
 }) {
   return (
     <View style={styles.reviewRow}>
@@ -430,8 +472,11 @@ function ReviewRowView({
             style={styles.reviewField}
           />
         </View>
+        <TouchableOpacity style={styles.analytePick} onPress={onPickUnit}>
+          <Text style={styles.unitLabel}>{row.unitLabel || "—"}</Text>
+          <Text style={styles.editGlyph}>✎</Text>
+        </TouchableOpacity>
         <MetaText>
-          {row.unitLabel || "—"}
           {row.status === "unmatched" ? " · nicht zugeordnet" : ""}
         </MetaText>
       </View>
@@ -490,6 +535,80 @@ function AnalytePickerModal({
             ))}
           </ScrollView>
           <Button title={strings.edit.cancel} variant="secondary" onPress={onClose} />
+        </View>
+      </View>
+    </Modal>
+  );
+}
+
+function UnitPickerModal({
+  visible,
+  units,
+  selectedUnitId,
+  onSelect,
+  onClose
+}: {
+  visible: boolean;
+  units: Unit[];
+  selectedUnitId: string | null;
+  onSelect: (unitId: string | null) => void;
+  onClose: () => void;
+}) {
+  const [query, setQuery] = useState("");
+
+  React.useEffect(() => {
+    if (visible) setQuery("");
+  }, [visible]);
+
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return units;
+    return units.filter(
+      (u) =>
+        u.displayName.toLowerCase().includes(q) ||
+        u.ucumCode.toLowerCase().includes(q)
+    );
+  }, [units, query]);
+
+  return (
+    <Modal visible={visible} transparent animationType="slide">
+      <View style={styles.modalShade}>
+        <View style={styles.modal}>
+          <Text style={styles.modalTitle}>{strings.import.correctMetric}</Text>
+          <TextInput
+            style={styles.search}
+            value={query}
+            onChangeText={setQuery}
+            placeholder={strings.import.searchMetric}
+            placeholderTextColor={colors.textFaint}
+          />
+          <ScrollView style={styles.pickerList}>
+            {selectedUnitId !== null && (
+              <TouchableOpacity
+                style={styles.pickerItem}
+                onPress={() => onSelect(null)}
+              >
+                <Text style={styles.pickerItemText}>
+                  {strings.import.noMetric}
+                </Text>
+              </TouchableOpacity>
+            )}
+            {filtered.map((unit) => (
+              <TouchableOpacity
+                key={unit.id}
+                style={styles.pickerItem}
+                onPress={() => onSelect(unit.id)}
+              >
+                <Text style={styles.pickerItemText}>{unit.displayName}</Text>
+                <MetaText>{unit.ucumCode}</MetaText>
+              </TouchableOpacity>
+            ))}
+          </ScrollView>
+          <Button
+            title={strings.edit.cancel}
+            variant="secondary"
+            onPress={onClose}
+          />
         </View>
       </View>
     </Modal>
@@ -569,6 +688,7 @@ const styles = StyleSheet.create({
     gap: spacing.xs
   },
   reviewLabel: { fontSize: 14, fontWeight: "600", color: colors.text },
+  unitLabel: { fontSize: 13, color: colors.textMuted },
   editGlyph: { fontSize: 13, color: colors.textFaint },
   reviewInputs: { flexDirection: "row", gap: spacing.sm, marginTop: 2 },
   reviewField: { flex: 1 },

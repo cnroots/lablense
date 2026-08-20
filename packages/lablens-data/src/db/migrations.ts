@@ -156,6 +156,14 @@ export const CORE_MIGRATIONS: Migration[] = [
         \`created_at\` text NOT NULL
       );`
     ]
+  },
+  {
+    version: 3,
+    statements: [
+      // Default metric (UCUM unit) per LOINC code, populated by the blood
+      // LOINC catalog import (see LoincJsonImporter / build-loinc-blood-catalog).
+      `ALTER TABLE \`loinc\` ADD COLUMN \`default_unit\` text;`
+    ]
   }
 ];
 

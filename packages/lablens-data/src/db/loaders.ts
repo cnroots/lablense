@@ -78,7 +78,8 @@ export function loadAnalyte(db: DatabaseClient, id: string): Analyte | null {
       timeAspect: loinc.timeAspect,
       system: loinc.system,
       scaleType: loinc.scaleType,
-      method: loinc.method
+      method: loinc.method,
+      defaultUnit: loinc.defaultUnit
     })
     .from(analyteLoinc)
     .innerJoin(loinc, eq(analyteLoinc.loincCode, loinc.code))
@@ -118,7 +119,8 @@ export function loadAnalyte(db: DatabaseClient, id: string): Analyte | null {
       timeAspect: l.timeAspect ?? undefined,
       system: l.system ?? undefined,
       scaleType: l.scaleType ?? undefined,
-      method: l.method ?? undefined
+      method: l.method ?? undefined,
+      defaultUnit: l.defaultUnit ?? undefined
     })),
     units: unitRows.map((u) => ({ unitId: u.unitId }))
   };

@@ -23,6 +23,7 @@ export interface LoincReference {
   system?: string;
   scaleType?: string;
   method?: string;
+  defaultUnit?: string;
 }
 
 export interface TestUnit {

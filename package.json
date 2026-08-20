@@ -16,6 +16,7 @@
     "db:migrate": "tsx scripts/migrate.ts",
     "db:prefill": "tsx scripts/prefill.ts",
     "loinc:import": "tsx scripts/loinc-import.ts",
+    "loinc:blood": "tsx scripts/build-loinc-blood-catalog.ts",
     "ocr:benchmark": "tsx scripts/ocr-benchmark.ts",
     "api:dev": "tsx apps/api/src/server.ts",
     "build": "npm run build --workspaces --if-present"

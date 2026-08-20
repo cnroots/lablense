@@ -84,9 +84,11 @@ The default database file is `./data/lablens.db` (override with `LABLENS_DB`).
 ## Terminology import
 
 - **Application data** — `npm run db:prefill` imports `data/app/tests.json`.
-- **LOINC** — download the official `Loinc.csv` from loinc.org after accepting
-  its license, then use `LoincImporter` (streaming, idempotent, upsert).
-  LabLens never fabricates LOINC codes. See `data/loinc/README.md`.
+- **LOINC** — download the official `Loinc.csv` and `LoincTableCore.csv` from
+  loinc.org after accepting its license, then use `LoincImporter` (streaming,
+  idempotent, upsert). LabLens never fabricates LOINC codes. The mobile app
+  ships a bundled blood-value subset (`npm run loinc:blood` → `LoincJsonImporter`)
+  with a default metric per entry. See `data/loinc/README.md`.
 - **UCUM** — UCUM codes are canonical; `UcumImporter` accepts a JSON unit list.
   See `data/ucum/README.md`.
 

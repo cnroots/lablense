@@ -19,5 +19,6 @@ export * from "./repositories/sqlite-user-repository";
 export * from "./importers/importer";
 export * from "./importers/app-data-importer";
 export * from "./importers/ucum-importer";
+export * from "./importers/loinc-json-importer";
 
 export * from "./compose";

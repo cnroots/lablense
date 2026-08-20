@@ -12,9 +12,9 @@ import type { Migration } from "../db/migrations";
  * Kept out of the shared domain schema; it lives only on the device.
  */
 const APP_SETTING_MIGRATION: Migration = {
-  version: 2,
+  version: 4,
   statements: [
-    `CREATE TABLE \`app_setting\` (
+    `CREATE TABLE IF NOT EXISTS \`app_setting\` (
       \`key\` text PRIMARY KEY NOT NULL,
       \`value\` text NOT NULL
     );`

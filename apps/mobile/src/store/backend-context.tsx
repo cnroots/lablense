@@ -8,6 +8,9 @@ import React, {
 } from "react";
 import type { User } from "@lablens/core";
 import { AppDataImporter, UcumImporter } from "@lablens/data";
+import { LoincJsonImporter } from "@lablens/data";
+import { dataImport } from "@lablens/data";
+import { eq } from "drizzle-orm";
 import type { DatabaseHandle } from "@lablens/data";
 import { createExpoDatabase } from "@lablens/data/expo";
 import { createMobileBackend } from "../composition/backend";
@@ -18,6 +21,7 @@ import { SettingsStore } from "./settings";
 import type { AppSettings } from "./settings";
 import appData from "../app-data.json";
 import ucumData from "../ucum-data.json";
+import loincBloodData from "../loinc-data.json";
 
 interface BackendContextValue {
   backend: MobileBackend;
@@ -73,6 +77,21 @@ export function BackendProvider({ children }: { children: React.ReactNode }) {
       try {
         // Seed the terminology database on first launch (idempotent upserts).
         const analytes = await backend.analytes.list();
+
+        // Blood-value LOINC catalog: imported whenever it is missing so that
+        // upgrades from a pre-LOINC build also pick it up. This runs before
+        // the application seed so curated LOINC links can be established.
+        const loincBlood = handle.db
+          .select({ id: dataImport.id })
+          .from(dataImport)
+          .where(eq(dataImport.dataset, "LOINC.BLOOD"))
+          .get();
+        if (!loincBlood) {
+          new LoincJsonImporter(handle.db, handle.transactions).import({
+            data: loincBloodData
+          });
+        }
+
         if (analytes.length === 0) {
           new AppDataImporter(handle.db, handle.transactions).import({
             data: appData

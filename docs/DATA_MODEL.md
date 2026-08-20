@@ -19,8 +19,10 @@ punctuation). The original name is never modified.
 
 ### `loinc`
 A LOINC concept (code, display name, version, component, property, time
-aspect, system, scale type, method, example units). Imported from an official
-distribution; LabLens never fabricates LOINC codes.
+aspect, system, scale type, method, example units, default metric). Imported
+from an official distribution; LabLens never fabricates LOINC codes. For the
+bundled blood-value catalog, `default_unit` holds the primary UCUM metric so
+the app can associate each LOINC code with a resolvable unit by default.
 
 ### `analyte_loinc`
 Many-to-many between `analyte` and `loinc`. One analyte may map to many LOINC

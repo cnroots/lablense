@@ -39,7 +39,8 @@ export const loinc = sqliteTable("loinc", {
   scaleType: text("scale_type"),
   method: text("method"),
   exampleUnits: text("example_units"),
-  exampleUcumUnits: text("example_ucum_units")
+  exampleUcumUnits: text("example_ucum_units"),
+  defaultUnit: text("default_unit")
 });
 
 export const analyteLoinc = sqliteTable(
